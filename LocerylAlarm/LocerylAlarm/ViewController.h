@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 {
+    IBOutlet UIButton *activateAlarmButton;
     //IBOutlet UIDatePicker *dateTimePicker;
     IBOutlet UITextField *dayField;
     //IBOutlet UITextField *monthField;

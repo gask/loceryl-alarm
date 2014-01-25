@@ -78,13 +78,36 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"loadei a view princiapal...");
+    
     //NSDate *now = [NSDate date];
     
     dayField.inputView = dateInput;
     dayField.delegate = self;
-    dateInput.minimumDate = [NSDate dateWithTimeInterval: -10 sinceDate:[NSDate date]];
+//    dateInput.minimumDate = [NSDate dateWithTimeInterval: -10 sinceDate:[NSDate date]];
     
     [dateInput addTarget:self action:@selector(datePicked) forControlEvents:UIControlEventValueChanged];
+    
+    [self datePicked];
+    
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(configureView) name:@"alarmSet" object:nil];
+    
+//    [self configureView];
+}
+
+- (void) configureView
+{
+    BOOL alarmSet = [[NSUserDefaults standardUserDefaults] boolForKey:@"alarmSet"];
+    
+    if(alarmSet)
+    {
+        [dayField removeFromSuperview];
+        activateAlarmButton.titleLabel.text = @"Reiniciar alarme";
+    }
+    else
+    {
+        [self.view addSubview: dayField];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -160,8 +183,10 @@
         
         NSLog(@"set tapped, date: %@",dateTimeString);
         
+        NSDate *teste = [NSDate dateWithTimeIntervalSinceNow:10];
         
-        [self scheduleLocalNotificationWithDate: alarmDate];
+  //      [self scheduleLocalNotificationWithDate: alarmDate];
+        [self scheduleLocalNotificationWithDate: teste];
         
         [self presentMessage:@"O aplicativo vai lembrá-lo da aplicação em 7 dias."];
     }

@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlarmViewController : UIViewController
+@interface AlarmViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 {
+    
     
 }
 
-- (IBAction) delayAlarmTenMinutes: (id)sender;
-- (IBAction) delayAlarmThirtyMinutes: (id)sender;
-- (IBAction) delayAlarmOneHour: (id)sender;
-- (IBAction) delayAlarmFourHours: (id)sender;
-- (IBAction) delayAlarmTwelveHours: (id)sender;
+@property (weak, nonatomic) IBOutlet UIPickerView *snoozePicker;
+
+- (IBAction) setDelayToAlarm: (id)sender;
+
 - (void) scheduleLocalNotificationWithDate: (NSDate *) fireDate;
 
 @end

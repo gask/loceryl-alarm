@@ -10,12 +10,16 @@
 
 @interface AlarmViewController ()
 
+@property (nonatomic) NSArray *delayArray;
+
 @end
 
 @implementation AlarmViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    
+    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -23,20 +27,66 @@
     return self;
 }
 
-- (IBAction) delayAlarmTenMinutes:(id)sender
+- (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
+    NSArray *data = [[NSArray alloc] initWithObjects: @"Adiar 30 minutos", @"Adiar 1h", @"Adiar 4h", nil];
+    
+    self.delayArray = data;
+	// Do any additional setup after loading the view.
+}
+
+#pragma mark Picker Data Source methods
+
+- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [_delayArray count];
+}
+
+#pragma mark Picker Delegate methods
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [_delayArray objectAtIndex:row];
+}
+
+- (IBAction) setDelayToAlarm:(id)sender
+{
+    
+    NSInteger selectedDelayIndex = [_snoozePicker selectedRowInComponent:0];
+    NSInteger secondsSelected = 0;
+    
+    if(selectedDelayIndex == 0) secondsSelected = 10;//30*60;
+    else if(selectedDelayIndex == 1) secondsSelected = 60*60;
+    else if(selectedDelayIndex == 2) secondsSelected = 4*60*60;
+    else
+    {
+        NSLog(@"deu zuera");
+    }
+    
+    NSLog(@"selecionou %i horas.", secondsSelected/60/60);
+    
     NSDate *oldAlarmDate = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
     
-    NSDate *alarmDate = [NSDate dateWithTimeInterval:60*10 sinceDate:oldAlarmDate];
+    NSDate *alarmDate = [NSDate dateWithTimeInterval: secondsSelected sinceDate:oldAlarmDate];
     
     [[NSUserDefaults standardUserDefaults] setObject: alarmDate forKey:@"alarmDate"];
     
     [self scheduleLocalNotificationWithDate: alarmDate];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"alarmSet" object:nil];
+    
 }
 
-- (IBAction) delayAlarmThirtyMinutes:(id)sender
+/*- (IBAction) delayAlarmThirtyMinutes:(id)sender
 {
     NSDate *oldAlarmDate = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
     
@@ -86,7 +136,7 @@
     [self scheduleLocalNotificationWithDate: alarmDate];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-}
+}*/
 
 -(void) scheduleLocalNotificationWithDate: (NSDate *) fireDate
 {
@@ -112,12 +162,6 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
     //[notification release];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
