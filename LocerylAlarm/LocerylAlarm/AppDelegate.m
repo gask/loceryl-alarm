@@ -24,6 +24,8 @@
 {
     UIViewController *alarmView = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"AlarmView"];
     
+    alarmView.modalPresentationStyle = UIModalPresentationFormSheet;
+    alarmView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self.window.rootViewController presentViewController: alarmView animated:YES completion:nil];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

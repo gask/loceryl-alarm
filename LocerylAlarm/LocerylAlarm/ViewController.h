@@ -19,6 +19,8 @@
     IBOutlet UIDatePicker *dateInput;
     IBOutlet UIToolbar *pickerToolbar;
     IBOutlet UIButton *dismissButton;
+    IBOutlet UIButton *finishTreatmentBtn;
+    IBOutlet UILabel *description;
 }
 
 -(void) presentMessage: (NSString *) message;

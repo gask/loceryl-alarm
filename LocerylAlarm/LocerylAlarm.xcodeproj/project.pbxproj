@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850406CC18971DF100DD15AF /* bt_comofunciona.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406C918971DF100DD15AF /* bt_comofunciona.png */; };
+		850406CD18971DF100DD15AF /* bt_fechar.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406CA18971DF100DD15AF /* bt_fechar.png */; };
+		850406CE18971DF100DD15AF /* bt_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406CB18971DF100DD15AF /* bt_ok.png */; };
+		850406D218971DF900DD15AF /* tela_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406CF18971DF900DD15AF /* tela_1.png */; };
+		850406D318971DF900DD15AF /* tela_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406D018971DF900DD15AF /* tela_2.png */; };
+		850406D418971DF900DD15AF /* tela_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406D118971DF900DD15AF /* tela_3.png */; };
+		850406D61897296B00DD15AF /* locerylsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 850406D51897296B00DD15AF /* locerylsound.mp3 */; };
 		855BE4951869C8F90031546C /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855BE4941869C8F90031546C /* AlarmViewController.m */; };
 		85DEB3CA1850C1C6002D6A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3C91850C1C6002D6A98 /* Foundation.framework */; };
 		85DEB3CC1850C1C6002D6A98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CB1850C1C6002D6A98 /* CoreGraphics.framework */; };
@@ -23,7 +30,7 @@
 		85DEB3EE1850C1C6002D6A98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CD1850C1C6002D6A98 /* UIKit.framework */; };
 		85DEB3F61850C1C6002D6A98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85DEB3F41850C1C6002D6A98 /* InfoPlist.strings */; };
 		85DEB3F81850C1C6002D6A98 /* LocerylAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DEB3F71850C1C6002D6A98 /* LocerylAlarmTests.m */; };
-		85DEB4021850CC0E002D6A98 /* Can.wav in Resources */ = {isa = PBXBuildFile; fileRef = 85DEB4011850CC0E002D6A98 /* Can.wav */; };
+		85E97766189AFE2400B0886D /* BT_TERMINAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 85E97765189AFE2400B0886D /* BT_TERMINAR.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		850406C918971DF100DD15AF /* bt_comofunciona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_comofunciona.png; sourceTree = "<group>"; };
+		850406CA18971DF100DD15AF /* bt_fechar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_fechar.png; sourceTree = "<group>"; };
+		850406CB18971DF100DD15AF /* bt_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_ok.png; sourceTree = "<group>"; };
+		850406CF18971DF900DD15AF /* tela_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela_1.png; sourceTree = "<group>"; };
+		850406D018971DF900DD15AF /* tela_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela_2.png; sourceTree = "<group>"; };
+		850406D118971DF900DD15AF /* tela_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela_3.png; sourceTree = "<group>"; };
+		850406D51897296B00DD15AF /* locerylsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = locerylsound.mp3; sourceTree = "<group>"; };
 		855BE4931869C8F90031546C /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		855BE4941869C8F90031546C /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		85DEB3C61850C1C6002D6A98 /* LocerylAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocerylAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +73,7 @@
 		85DEB3F31850C1C6002D6A98 /* LocerylAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocerylAlarmTests-Info.plist"; sourceTree = "<group>"; };
 		85DEB3F51850C1C6002D6A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85DEB3F71850C1C6002D6A98 /* LocerylAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocerylAlarmTests.m; sourceTree = "<group>"; };
-		85DEB4011850CC0E002D6A98 /* Can.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Can.wav; sourceTree = "<group>"; };
+		85E97765189AFE2400B0886D /* BT_TERMINAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BT_TERMINAR.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850406C818971DDA00DD15AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				850406CF18971DF900DD15AF /* tela_1.png */,
+				850406D018971DF900DD15AF /* tela_2.png */,
+				85E97765189AFE2400B0886D /* BT_TERMINAR.png */,
+				850406D118971DF900DD15AF /* tela_3.png */,
+				850406C918971DF100DD15AF /* bt_comofunciona.png */,
+				850406CA18971DF100DD15AF /* bt_fechar.png */,
+				850406CB18971DF100DD15AF /* bt_ok.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		85DEB3BD1850C1C6002D6A98 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +147,7 @@
 		85DEB3CF1850C1C6002D6A98 /* LocerylAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				850406C818971DDA00DD15AF /* Images */,
 				85DEB3D81850C1C6002D6A98 /* AppDelegate.h */,
 				85DEB3D91850C1C6002D6A98 /* AppDelegate.m */,
 				855BE4931869C8F90031546C /* AlarmViewController.h */,
@@ -166,7 +195,7 @@
 		85DEB4031850CC16002D6A98 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				85DEB4011850CC0E002D6A98 /* Can.wav */,
+				850406D51897296B00DD15AF /* locerylsound.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -248,8 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DEB3E01850C1C6002D6A98 /* Main_iPad.storyboard in Resources */,
+				850406D61897296B00DD15AF /* locerylsound.mp3 in Resources */,
+				850406D218971DF900DD15AF /* tela_1.png in Resources */,
 				85DEB3E51850C1C6002D6A98 /* Images.xcassets in Resources */,
-				85DEB4021850CC0E002D6A98 /* Can.wav in Resources */,
+				850406CC18971DF100DD15AF /* bt_comofunciona.png in Resources */,
+				85E97766189AFE2400B0886D /* BT_TERMINAR.png in Resources */,
+				850406D318971DF900DD15AF /* tela_2.png in Resources */,
+				850406D418971DF900DD15AF /* tela_3.png in Resources */,
+				850406CE18971DF100DD15AF /* bt_ok.png in Resources */,
+				850406CD18971DF100DD15AF /* bt_fechar.png in Resources */,
 				85DEB3DD1850C1C6002D6A98 /* Main_iPhone.storyboard in Resources */,
 				85DEB3D41850C1C6002D6A98 /* InfoPlist.strings in Resources */,
 			);

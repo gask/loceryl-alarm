@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-    NSArray *data = [[NSArray alloc] initWithObjects: @"Adiar 30 minutos", @"Adiar 1h", @"Adiar 4h", nil];
+    NSArray *data = [[NSArray alloc] initWithObjects: @"Não Adiar", @"Adiar 30 minutos", @"Adiar 1h", @"Adiar 4h", nil];
     
     self.delayArray = data;
 	// Do any additional setup after loading the view.
@@ -62,12 +62,17 @@
     NSInteger selectedDelayIndex = [_snoozePicker selectedRowInComponent:0];
     NSInteger secondsSelected = 0;
     
-    if(selectedDelayIndex == 0) secondsSelected = 10;//30*60;
-    else if(selectedDelayIndex == 1) secondsSelected = 60*60;
-    else if(selectedDelayIndex == 2) secondsSelected = 4*60*60;
+    if(selectedDelayIndex == 1) secondsSelected = 10;//30*60;
+    else if(selectedDelayIndex == 2) secondsSelected = 60*60;
+    else if(selectedDelayIndex == 3) secondsSelected = 4*60*60;
+    else if(selectedDelayIndex == 0)
+    {
+        NSLog(@"hehe, nada de adiar...");
+        secondsSelected = 7*24*60*60;
+    }
     else
     {
-        NSLog(@"deu zuera");
+        NSLog(@"deu erro");
     }
     
     NSLog(@"selecionou %i horas.", secondsSelected/60/60);
@@ -156,8 +161,8 @@
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     
     notification.fireDate = fireDate;
-    notification.alertBody = @"Hora do Loceryl!";
-    notification.soundName = @"Can.wav";
+    notification.alertBody = @"É hora de aplicar Loceryl esmalte";
+    notification.soundName = @"locerylsound.mp3";
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     

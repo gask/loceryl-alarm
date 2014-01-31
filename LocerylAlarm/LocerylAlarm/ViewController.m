@@ -69,7 +69,7 @@
     
     NSString *dateTimeString = [dateFormatter stringFromDate: dateInput.date];
     
-    //NSLog(@"set tapped, date: %@",dateTimeString);
+    NSLog(@"mudei data no textfield, date: %@",dateTimeString);
     
     dayField.text = dateTimeString;
 }
@@ -77,7 +77,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+        
     NSLog(@"loadei a view princiapal...");
     
     //NSDate *now = [NSDate date];
@@ -92,21 +92,56 @@
     
     [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(configureView) name:@"alarmSet" object:nil];
     
-//    [self configureView];
+    [self configureView];
 }
 
 - (void) configureView
 {
     BOOL alarmSet = [[NSUserDefaults standardUserDefaults] boolForKey:@"alarmSet"];
     
+    //NSLog(@"tamanho do bagaço, w: %f h: %f", finishTreatmentBtn.frame );
+    
     if(alarmSet)
     {
-        [dayField removeFromSuperview];
-        activateAlarmButton.titleLabel.text = @"Reiniciar alarme";
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+        dateFormatter.timeStyle = NSDateFormatterShortStyle;
+        dateFormatter.dateStyle = NSDateFormatterShortStyle;
+        
+        [dateFormatter setLocale: [[NSLocale alloc] initWithLocaleIdentifier: @"pt_BR"]];
+        
+        NSString *alarmHour = [dateFormatter stringFromDate: [[NSUserDefaults standardUserDefaults] objectForKey:@"alarmDate"]];
+        
+        //[dayField removeFromSuperview];
+        dayField.hidden = YES;
+        activateAlarmButton.hidden = YES;
+        //[activateAlarmButton removeFromSuperview];
+        
+        
+        
+        //[self.view addSubview: finishTreatmentBtn];
+        finishTreatmentBtn.hidden = NO;
+        //finishTreatmentBtn.frame = CGRectMake(0, 316, 319, 13);
+        
+        description.text = [NSString stringWithFormat: @"O horário para a próxima aplicação é: %@", alarmHour];
+        
     }
     else
     {
-        [self.view addSubview: dayField];
+        description.text = @"Informe a data da primeira aplicação de Loceryl esmalte";
+        
+       
+        
+        
+        
+//        [self.view addSubview: dayField];
+//        [self.view addSubview: activateAlarmButton];
+//        [finishTreatmentBtn removeFromSuperview];
+        dayField.hidden = NO;
+        activateAlarmButton.hidden = NO;
+        finishTreatmentBtn.hidden = YES;
+        
+//        activateAlarmButton.frame = CGRectMake(244, 302, 52, 40);
     }
 }
 
@@ -118,7 +153,7 @@
 
 -(void) presentMessage:(NSString *)message {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Loceryl" message: message delegate: nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-    
+        
     [alert show];
 }
 
@@ -132,8 +167,8 @@
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     
     notification.fireDate = fireDate;
-    notification.alertBody = @"Hora do Loceryl!";
-    notification.soundName = @"Can.wav";
+    notification.alertBody = @"É hora de aplicar Loceryl esmalte";
+    notification.soundName = @"locerylsound.mp3";
 
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
@@ -189,6 +224,8 @@
         [self scheduleLocalNotificationWithDate: teste];
         
         [self presentMessage:@"O aplicativo vai lembrá-lo da aplicação em 7 dias."];
+        
+        [self configureView];
     }
     
 }
@@ -203,6 +240,8 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"alarmDate"];
     
     [self presentMessage:@"O aplicativo não vai emitir mais lembretes."];
+    
+    [self configureView];
 }
 
 @end
