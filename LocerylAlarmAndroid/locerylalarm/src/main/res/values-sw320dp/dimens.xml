@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="main_background_width">260dp</dimen>
+    <dimen name="main_background_height">480dp</dimen>
+    <!--<dimen name=""-->
+
+</resources>

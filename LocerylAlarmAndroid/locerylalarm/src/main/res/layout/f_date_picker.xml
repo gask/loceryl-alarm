@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:background="#000"
+        android:alpha=".75"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:background="#000"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <DatePicker
+                android:id="@+id/fdatepicker_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="Confirmar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/fdatepicker_picker"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:onClick="pickerButtonClick" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
