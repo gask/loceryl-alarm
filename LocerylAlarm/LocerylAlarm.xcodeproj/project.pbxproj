@@ -14,6 +14,14 @@
 		850406D318971DF900DD15AF /* tela_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406D018971DF900DD15AF /* tela_2.png */; };
 		850406D418971DF900DD15AF /* tela_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 850406D118971DF900DD15AF /* tela_3.png */; };
 		850406D61897296B00DD15AF /* locerylsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 850406D51897296B00DD15AF /* locerylsound.mp3 */; };
+		8548DF5F189EDA060054FB92 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF58189EDA060054FB92 /* 29.png */; };
+		8548DF60189EDA060054FB92 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF59189EDA060054FB92 /* 58.png */; };
+		8548DF61189EDA060054FB92 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF5A189EDA060054FB92 /* 40.png */; };
+		8548DF62189EDA060054FB92 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF5B189EDA060054FB92 /* 80.png */; };
+		8548DF63189EDA060054FB92 /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF5C189EDA060054FB92 /* 152.png */; };
+		8548DF64189EDA060054FB92 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF5D189EDA060054FB92 /* 76.png */; };
+		8548DF65189EDA060054FB92 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF5E189EDA060054FB92 /* 120.png */; };
+		8548DF67189EE06B0054FB92 /* tela_1 ajustada.png in Resources */ = {isa = PBXBuildFile; fileRef = 8548DF66189EE06B0054FB92 /* tela_1 ajustada.png */; };
 		855BE4951869C8F90031546C /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855BE4941869C8F90031546C /* AlarmViewController.m */; };
 		85DEB3CA1850C1C6002D6A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3C91850C1C6002D6A98 /* Foundation.framework */; };
 		85DEB3CC1850C1C6002D6A98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CB1850C1C6002D6A98 /* CoreGraphics.framework */; };
@@ -51,6 +59,14 @@
 		850406D018971DF900DD15AF /* tela_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela_2.png; sourceTree = "<group>"; };
 		850406D118971DF900DD15AF /* tela_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tela_3.png; sourceTree = "<group>"; };
 		850406D51897296B00DD15AF /* locerylsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = locerylsound.mp3; sourceTree = "<group>"; };
+		8548DF58189EDA060054FB92 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		8548DF59189EDA060054FB92 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		8548DF5A189EDA060054FB92 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		8548DF5B189EDA060054FB92 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		8548DF5C189EDA060054FB92 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
+		8548DF5D189EDA060054FB92 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
+		8548DF5E189EDA060054FB92 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		8548DF66189EE06B0054FB92 /* tela_1 ajustada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tela_1 ajustada.png"; sourceTree = "<group>"; };
 		855BE4931869C8F90031546C /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		855BE4941869C8F90031546C /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		85DEB3C61850C1C6002D6A98 /* LocerylAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocerylAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +119,9 @@
 		850406C818971DDA00DD15AF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8548DF57189ED4BD0054FB92 /* Icons */,
 				850406CF18971DF900DD15AF /* tela_1.png */,
+				8548DF66189EE06B0054FB92 /* tela_1 ajustada.png */,
 				850406D018971DF900DD15AF /* tela_2.png */,
 				85E97765189AFE2400B0886D /* BT_TERMINAR.png */,
 				850406D118971DF900DD15AF /* tela_3.png */,
@@ -112,6 +130,20 @@
 				850406CB18971DF100DD15AF /* bt_ok.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		8548DF57189ED4BD0054FB92 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				8548DF58189EDA060054FB92 /* 29.png */,
+				8548DF59189EDA060054FB92 /* 58.png */,
+				8548DF5A189EDA060054FB92 /* 40.png */,
+				8548DF5B189EDA060054FB92 /* 80.png */,
+				8548DF5C189EDA060054FB92 /* 152.png */,
+				8548DF5D189EDA060054FB92 /* 76.png */,
+				8548DF5E189EDA060054FB92 /* 120.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		85DEB3BD1850C1C6002D6A98 = {
@@ -247,6 +279,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Giovanni Barreira Ferraro";
 				TargetAttributes = {
+					85DEB3C51850C1C6002D6A98 = {
+						DevelopmentTeam = 4HXEV7R9G7;
+					};
 					85DEB3E91850C1C6002D6A98 = {
 						TestTargetID = 85DEB3C51850C1C6002D6A98;
 					};
@@ -276,18 +311,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8548DF5F189EDA060054FB92 /* 29.png in Resources */,
+				8548DF67189EE06B0054FB92 /* tela_1 ajustada.png in Resources */,
+				8548DF63189EDA060054FB92 /* 152.png in Resources */,
+				8548DF62189EDA060054FB92 /* 80.png in Resources */,
 				85DEB3E01850C1C6002D6A98 /* Main_iPad.storyboard in Resources */,
 				850406D61897296B00DD15AF /* locerylsound.mp3 in Resources */,
 				850406D218971DF900DD15AF /* tela_1.png in Resources */,
 				85DEB3E51850C1C6002D6A98 /* Images.xcassets in Resources */,
+				8548DF61189EDA060054FB92 /* 40.png in Resources */,
 				850406CC18971DF100DD15AF /* bt_comofunciona.png in Resources */,
 				85E97766189AFE2400B0886D /* BT_TERMINAR.png in Resources */,
 				850406D318971DF900DD15AF /* tela_2.png in Resources */,
+				8548DF60189EDA060054FB92 /* 58.png in Resources */,
 				850406D418971DF900DD15AF /* tela_3.png in Resources */,
 				850406CE18971DF100DD15AF /* bt_ok.png in Resources */,
+				8548DF64189EDA060054FB92 /* 76.png in Resources */,
 				850406CD18971DF100DD15AF /* bt_fechar.png in Resources */,
 				85DEB3DD1850C1C6002D6A98 /* Main_iPhone.storyboard in Resources */,
 				85DEB3D41850C1C6002D6A98 /* InfoPlist.strings in Resources */,
+				8548DF65189EDA060054FB92 /* 120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,12 +489,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocerylAlarm/LocerylAlarm-Prefix.pch";
 				INFOPLIST_FILE = "LocerylAlarm/LocerylAlarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5B153013-C153-4FE0-8FA2-1E5E1E42170D";
+				PROVISIONING_PROFILE = "E4A3A5B0-B200-4EAE-A861-D3F608F58F56";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -461,12 +504,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocerylAlarm/LocerylAlarm-Prefix.pch";
 				INFOPLIST_FILE = "LocerylAlarm/LocerylAlarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5B153013-C153-4FE0-8FA2-1E5E1E42170D";
+				PROVISIONING_PROFILE = "E4A3A5B0-B200-4EAE-A861-D3F608F58F56";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

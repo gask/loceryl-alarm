@@ -38,6 +38,12 @@
     CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, 320, 44);
     CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, 320, 216);
     
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, 768, 44);
+        datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, 768, 216);
+    }
+    
     [UIView beginAnimations:@"MoveOut" context:nil];
     dateInput.frame = datePickerTargetFrame;
     pickerToolbar.frame = toolbarTargetFrame;
@@ -50,6 +56,12 @@
 -(void)moveToolbarToFront
 {
     CGRect toolbarTargetFrame = CGRectMake(0, 173, 320, 44);
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        toolbarTargetFrame = CGRectMake(0, 250, 768, 44);
+    }
+    
     [UIView beginAnimations:@"MoveIn" context:nil];
     pickerToolbar.frame = toolbarTargetFrame;
     [UIView commitAnimations];
@@ -169,7 +181,8 @@
     notification.fireDate = fireDate;
     notification.alertBody = @"É hora de aplicar Loceryl esmalte";
     notification.soundName = @"locerylsound.mp3";
-
+    notification.repeatInterval = NSWeekCalendarUnit;
+    
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
     //[notification release];
