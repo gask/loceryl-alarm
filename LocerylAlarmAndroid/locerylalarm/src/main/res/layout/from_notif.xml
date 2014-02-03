@@ -25,7 +25,7 @@
             android:id="@+id/from_notif_btok"
             android:background="@drawable/btok"
             android:layout_centerHorizontal="true"
-            android:onClick="snoozerButtonClicked"
+            android:onClick="snoozeButtonClicked"
             android:layout_width="@dimen/from_notif_btok_width"
             android:layout_height="@dimen/from_notif_btok_height" />
 

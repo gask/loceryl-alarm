@@ -19,7 +19,7 @@ public class FromNotificationActivity extends FragmentActivity {
         setContentView(R.layout.from_notif);
 
         Spinner spinner = (Spinner) findViewById(R.id.from_notif_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.delay_array, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.delay_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
@@ -32,10 +32,10 @@ public class FromNotificationActivity extends FragmentActivity {
 
     @Override
     public void onBackPressed() {
-        snoozerButtonClicked(null);
+        snoozeButtonClicked(null);
     }
 
-    public void snoozerButtonClicked(View view) {
+    public void snoozeButtonClicked(View view) {
         Helper.cancelAlarm(this);
         Helper.clearNotifications(this);
 
