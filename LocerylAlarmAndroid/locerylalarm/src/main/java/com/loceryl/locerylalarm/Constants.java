@@ -14,7 +14,7 @@ public final class Constants {
     public static final String DATE = "date";
     public static final String DATE_FORMAT = "%02d/%02d/%d";
     public static final String HOUR_FORMAT = "%02d:%02d";
-    public static final int DELAYS[] = {0, 1000*60*30, 1000*60*60, 1000*60*60*4};
+    public static final int DELAYS[] = {(int)REPEAT_DELAY, 1000*60*30, 1000*60*60, 1000*60*60*4};
 
     public static final int NOTIFICATION_SERVICE_ID = 123456;
     public static final int FROM_NOTIF_ACTIVITY_ID = 445566;
