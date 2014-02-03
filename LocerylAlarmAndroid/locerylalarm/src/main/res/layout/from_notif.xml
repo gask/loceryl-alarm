@@ -16,7 +16,7 @@
 
     <RelativeLayout
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="@dimen/from_notif_viewgroup_margintop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="false">
@@ -26,8 +26,8 @@
             android:background="@drawable/btok"
             android:layout_centerHorizontal="true"
             android:onClick="snoozerButtonClicked"
-            android:layout_width="@dimen/from_notif_okbutton_width"
-            android:layout_height="@dimen/from_notif_okbutton_height" />
+            android:layout_width="@dimen/from_notif_btok_width"
+            android:layout_height="@dimen/from_notif_btok_height" />
 
         <Spinner
             android:id="@+id/from_notif_spinner"
@@ -35,9 +35,10 @@
             android:gravity="center"
             android:background="@drawable/corner"
             android:layout_below="@id/from_notif_btok"
+            android:layout_marginTop="@dimen/double_margin"
             android:layout_centerHorizontal="true"
-            android:layout_width="100dp"
-            android:layout_height="36dp" />
+            android:layout_width="@dimen/from_notif_spinner_width"
+            android:layout_height="@dimen/from_notif_spinner_height" />
     </RelativeLayout>
 
 </RelativeLayout>

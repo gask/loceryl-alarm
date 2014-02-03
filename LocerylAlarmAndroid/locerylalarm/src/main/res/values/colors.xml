@@ -1,4 +1,6 @@
 <resources>
-    <color name="main_description_color">#277cc9</color>
     <color name="white">#fff</color>
+    <color name="main_description_color">#277cc9</color>
+
+    <color name="works_description_color">#c42530</color>
 </resources>

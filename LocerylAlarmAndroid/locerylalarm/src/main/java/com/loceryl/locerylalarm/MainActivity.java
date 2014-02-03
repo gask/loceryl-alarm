@@ -1,7 +1,5 @@
 package com.loceryl.locerylalarm;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,11 +22,8 @@ public class MainActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
 
-        Calendar date = Helper.loadDate(this);
 
         picker = new PickerFragment();
-        toggleTerminateVisual(Helper.isAlarmSet(this));
-        setViewText(R.id.main_date, CustomDate.stringFromCalendar(date));
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -81,6 +76,11 @@ public class MainActivity extends FragmentActivity {
         view.setVisibility(View.INVISIBLE);
     }
 
+    public void setViewText(int viewId, String description) {
+        TextView view = (TextView)findViewById(viewId);
+        view.setText(description);
+    }
+
     public void toggleTerminateVisual(boolean terminateShown) {
         if (terminateShown) {
             Calendar date = Helper.loadDate(this);
@@ -101,33 +101,20 @@ public class MainActivity extends FragmentActivity {
         updateLayout();
     }
 
-    public void setViewText(int viewId, String description) {
-        TextView view = (TextView)findViewById(viewId);
-        view.setText(description);
-    }
-
     public void startAlarm(View view) {
         DatePicker datePicker = (DatePicker) findViewById(R.id.fdatepicker_picker);
         Calendar date = CustomDate.calendarFromDatePicker(datePicker);
-//        date.add(Calendar.DAY_OF_MONTH, Constants.ALARM_TIME);
+        date.add(Calendar.DAY_OF_MONTH, Constants.ALARM_TIME);
 
         Helper.saveDate(this, date);
-
-        Intent intent = new Intent (this, NotificationService.class);
-        PendingIntent pendingIntent = PendingIntent.getService(this, Constants.NOTIFICATION_SERVICE_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, date.getTimeInMillis(), Constants.REPEAT_DELAY, pendingIntent);
-        Helper.setAlarmSet(this, true);
-
+        Helper.createAlarm(this, date);
         toggleTerminateVisual(true);
     }
 
     public void terminateAlarm(View view) {
-        Helper.clearNotifications(this);
-        Helper.cancelAlarm(this);
-        Helper.setAlarmSet(this, false);
         Helper.saveDate(this, null);
+        Helper.cancelAlarm(this);
+        Helper.clearNotifications(this);
         toggleTerminateVisual(false);
     }
 
@@ -145,7 +132,6 @@ public class MainActivity extends FragmentActivity {
     }
 
     private void updateLayout() {
-        Helper.clearNotifications(this);
         ViewGroup layout = (ViewGroup)findViewById(R.id.main_layout);
         layout.invalidate();
     }

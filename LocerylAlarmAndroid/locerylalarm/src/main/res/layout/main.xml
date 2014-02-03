@@ -36,8 +36,8 @@
             android:gravity="center"
             android:background="@color/white"
             android:layout_below="@id/main_description"
-            android:layout_marginTop="@dimen/main_double_margintop"
-            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/double_margin"
+            android:layout_marginLeft="@dimen/margin"
             android:onClick="showPicker"
             android:layout_width="@dimen/main_date_width"
             android:layout_height="@dimen/main_date_height"
@@ -50,17 +50,17 @@
             android:layout_marginTop="@dimen/main_btterminate_margintop"
             android:onClick="terminateAlarm"
             android:layout_width="fill_parent"
-            android:layout_height="15dp" />
+            android:layout_height="@dimen/main_btterminate_height" />
         <Button
             android:id="@+id/main_btok"
             android:background="@drawable/btok"
             android:layout_below="@id/main_description"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/main_margin"
-            android:layout_marginRight="@dimen/main_margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:onClick="startAlarm"
-            android:layout_width="@dimen/main_okbutton_width"
-            android:layout_height="@dimen/main_okbutton_height" />
+            android:layout_width="@dimen/main_btok_width"
+            android:layout_height="@dimen/main_btok_height" />
     </RelativeLayout>
     <Button
         android:id="@+id/main_button_works"
@@ -69,8 +69,8 @@
         android:background="@drawable/btcomofunciona"
         android:layout_alignRight="@id/main_background"
         android:layout_alignBottom="@id/main_date_setup"
-        android:layout_marginBottom="@dimen/main_howitworksbutton_marginbottom"
-        android:layout_marginRight="@dimen/main_howitworksbutton_marginright"
-        android:layout_width="@dimen/main_howitworksbutton_width"
-        android:layout_height="@dimen/main_howitworksbutton_height" />
+        android:layout_marginBottom="@dimen/main_btworks_marginbottom"
+        android:layout_marginRight="@dimen/main_btworks_marginright"
+        android:layout_width="@dimen/main_btworks_width"
+        android:layout_height="@dimen/main_btworks_height" />
 </RelativeLayout>
