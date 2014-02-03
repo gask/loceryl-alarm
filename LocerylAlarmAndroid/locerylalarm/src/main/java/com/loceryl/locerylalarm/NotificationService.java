@@ -5,11 +5,11 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.Intent;
-import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.IBinder;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -19,17 +19,13 @@ import java.util.Calendar;
  */
 public class NotificationService extends Service {
 
-    private static Intent intent;
-    public static Intent getStaticIntent(Context context) {
-        if (intent == null) {
-            intent = new Intent(context, NotificationService.class);
-        }
-        return intent;
-    }
-    public static PendingIntent getStaticPendingIntent(Context context) {
-        return PendingIntent.getService(context, 0, getStaticIntent(context), PendingIntent.FLAG_UPDATE_CURRENT);
-    }
-
+//    private static Intent intent;
+//    public static Intent intent(Context context) {
+//        if (intent == null) {
+//            intent = new Intent(context, NotificationService.class);
+//        }
+//        return intent;
+//    }
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -57,29 +53,31 @@ public class NotificationService extends Service {
     @Override
     public void onStart(Intent intent, int startId) {
         super.onStart(intent, startId);
-        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-        Intent notificationIntent = MainActivity.getStaticIntent(this);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
+        Intent notificationIntent = new Intent(this, FromNotificationActivity.class);
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+        stackBuilder.addParentStack(FromNotificationActivity.class);
+        stackBuilder.addNextIntent(notificationIntent);
+
+        PendingIntent pendingIntent = stackBuilder.getPendingIntent(Constants.FROM_NOTIF_ACTIVITY_ID, PendingIntent.FLAG_UPDATE_CURRENT);
         int icon = R.drawable.ic_launcher;
-        String ticker = "Time for Loceryl!";
-        String title = "Loceryl Alarm";
-        String message = "You should take your medicine right now!";
         long when = Calendar.getInstance().getTimeInMillis();
         String alarmPath = String.format("%s://%s/%s", ContentResolver.SCHEME_ANDROID_RESOURCE, getPackageName(), R.raw.locerylsound);
         Uri alarmSound = Uri.parse(alarmPath);
-        Notification notification = new Notification.Builder(this)
+        Notification notification = new NotificationCompat.Builder(this)
                 .setSound(alarmSound)
-//                .setTicker(ticker)
-                .setContentTitle(title)
-                .setContentText(message)
+                .setContentTitle(Constants.NOTIFICATION_TITLE)
+                .setContentText(Constants.NOTIFICATION_MESSAGE)
                 .setSmallIcon(icon)
                 .setWhen(when)
                 .setContentIntent(pendingIntent)
                 .setDefaults(Notification.DEFAULT_LIGHTS | Notification.DEFAULT_VIBRATE)
+                .setAutoCancel(true)
                 .build();
 
-        notificationManager.notify(123, notification);
-        Toast.makeText(this, ticker, Toast.LENGTH_LONG).show();
+        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.notify(0, notification);
+        Toast.makeText(this, Constants.NOTIFICATION_MESSAGE, Toast.LENGTH_LONG).show();
     }
+
 }

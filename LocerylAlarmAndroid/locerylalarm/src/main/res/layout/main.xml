@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
-    android:background="#fff"
+    android:background="@color/white"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context="com.loceryl.locerylalarm.MainActivity"
@@ -11,35 +11,66 @@
         android:id="@+id/main_background"
         android:background="@drawable/tela1"
         android:layout_centerHorizontal="true"
-        android:layout_width="@dimen/main_background_width"
-        android:layout_height="@dimen/main_background_height" />
+        android:layout_width="@dimen/background_width"
+        android:layout_height="@dimen/background_height" />
+
     <RelativeLayout
-        android:background="#000"
         android:id="@+id/main_date_setup"
         android:layout_alignTop="@id/main_background"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="206dip"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/main_datecontainer_margintop"
+        android:layout_width="@dimen/main_datecontainer_width"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/main_description"
+            android:text="@string/description_unset"
+            android:textSize="@dimen/main_description_text_size"
+            android:gravity="center"
+            android:textColor="@color/main_description_color"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/main_date"
-            android:text="12/12/2014"
+            android:text="21/12/2012"
             android:gravity="center"
-            android:background="#fff"
-            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_below="@id/main_description"
+            android:layout_marginTop="@dimen/main_double_margintop"
+            android:layout_marginLeft="@dimen/main_margin"
             android:onClick="showPicker"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/main_date_width"
+            android:layout_height="@dimen/main_date_height"
             android:clickable="true" />
         <Button
+            android:id="@+id/main_btterminate"
+            android:background="@drawable/btterminar"
+            android:layout_below="@id/main_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/main_btterminate_margintop"
+            android:onClick="terminateAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp" />
+        <Button
+            android:id="@+id/main_btok"
             android:background="@drawable/btok"
-            android:layout_toRightOf="@+id/main_date"
+            android:layout_below="@id/main_description"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
             android:onClick="startAlarm"
-            android:layout_width="52dp"
-            android:layout_height="40dp" />
+            android:layout_width="@dimen/main_okbutton_width"
+            android:layout_height="@dimen/main_okbutton_height" />
     </RelativeLayout>
+    <Button
+        android:id="@+id/main_button_works"
+        android:clickable="true"
+        android:onClick="showHowItWorks"
+        android:background="@drawable/btcomofunciona"
+        android:layout_alignRight="@id/main_background"
+        android:layout_alignBottom="@id/main_date_setup"
+        android:layout_marginBottom="@dimen/main_howitworksbutton_marginbottom"
+        android:layout_marginRight="@dimen/main_howitworksbutton_marginright"
+        android:layout_width="@dimen/main_howitworksbutton_width"
+        android:layout_height="@dimen/main_howitworksbutton_height" />
 </RelativeLayout>

@@ -1,15 +1,11 @@
 package com.loceryl.locerylalarm;
 
 import android.app.AlarmManager;
-import android.app.NotificationManager;
-import android.content.Context;
+import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -21,33 +17,18 @@ import java.util.Calendar;
 public class MainActivity extends FragmentActivity {
 
     private PickerFragment picker;
-    private Calendar date;
-
-    private static Intent intent;
-    public static Intent getStaticIntent(Context context) {
-        if (intent == null) {
-            intent = new Intent(context, MainActivity.class);
-        }
-        return intent;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        alarmManager.cancel(NotificationService.getStaticPendingIntent(this));
-        if (loadDate()) {
-            startAlarm(null);
-        }
-        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-        notificationManager.cancelAll();
+
+        Calendar date = Helper.loadDate(this);
 
         picker = new PickerFragment();
-        intent = getIntent();
-        TextView dateText = (TextView)findViewById(R.id.main_date);
-        dateText.setText(CustomDate.stringFromCalendar(Calendar.getInstance()));
+        toggleTerminateVisual(Helper.isAlarmSet(this));
+        setViewText(R.id.main_date, CustomDate.stringFromCalendar(date));
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -58,81 +39,113 @@ public class MainActivity extends FragmentActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    protected void onStart() {
+        super.onStart();
+        Helper.clearNotifications(this);
+        toggleTerminateVisual(Helper.isAlarmSet(this));
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    public void showPicker(View view) {
-        getSupportFragmentManager().beginTransaction()
-                .show(picker)
-                .commit();
-    }
-
-    public void hidePicker() {
-        getSupportFragmentManager().beginTransaction()
-                .hide(picker)
-                .commit();
-    }
-
-    public void startAlarm(View view) {
-        if (date == null) {
-            date = Calendar.getInstance();
-        }
-        date.add(Calendar.DAY_OF_MONTH, Constants.ALARM_TIME);
-        saveDate();
-        long repeat = Constants.REPEAT_DELAY;
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-//        alarmManager.cancel(NotificationService.getStaticPendingIntent(this));
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, date.getTimeInMillis(), repeat, NotificationService.getStaticPendingIntent(this));
-    }
-
-    public void pickerButtonClick(View view) {
-        DatePicker datePicker = (DatePicker) findViewById(R.id.fdatepicker_picker);
-        date = CustomDate.calendarFromDatePicker(datePicker);
-        hidePicker();
-        TextView dateText = (TextView)findViewById(R.id.main_date);
-        dateText.setText(CustomDate.stringFromCalendar(date));
-        updateLayout();
-    }
-
-    private void saveDate() {
-        SharedPreferences preferences = getSharedPreferences(Constants.SETTINGS, MODE_PRIVATE);
-        preferences.edit().putLong(Constants.DATE, date.getTimeInMillis()).commit();
-    }
-
-    private boolean loadDate() {
-        SharedPreferences preferences = getSharedPreferences(Constants.SETTINGS, MODE_PRIVATE);
-        long millis = preferences.getLong(Constants.DATE, 0);
-        if (millis == 0) {
-            return false;
-        }
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(millis);
-        date = calendar;
-        return true;
-    }
     @Override
     public void onBackPressed() {
         if (picker.isVisible()) {
-            hidePicker();
+            hideFragment(picker);
         }
         else {
             super.onBackPressed();
         }
     }
 
+    public void showPicker(View view) {
+        showFragment(picker);
+    }
+
+    public void showFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .show(fragment)
+                .commit();
+    }
+
+    public void hideFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .hide(fragment)
+                .commit();
+    }
+
+    public void showView(View view) {
+        view.setEnabled(true);
+        view.setVisibility(View.VISIBLE);
+    }
+
+    public void hideView(View view) {
+        view.setEnabled(false);
+        view.setVisibility(View.INVISIBLE);
+    }
+
+    public void toggleTerminateVisual(boolean terminateShown) {
+        if (terminateShown) {
+            Calendar date = Helper.loadDate(this);
+            String description = getResources().getString(R.string.description_set, CustomDate.stringFromCalendar(date), CustomDate.timeFromCalendar(date));
+            setViewText(R.id.main_description, description);
+            hideView(findViewById(R.id.main_date));
+            hideView(findViewById(R.id.main_btok));
+            showView(findViewById(R.id.main_btterminate));
+        }
+        else {
+            setViewText(R.id.main_date, CustomDate.stringFromCalendar(Calendar.getInstance()));
+            String description = getResources().getString(R.string.description_unset);
+            setViewText(R.id.main_description, description);
+            showView(findViewById(R.id.main_date));
+            showView(findViewById(R.id.main_btok));
+            hideView(findViewById(R.id.main_btterminate));
+        }
+        updateLayout();
+    }
+
+    public void setViewText(int viewId, String description) {
+        TextView view = (TextView)findViewById(viewId);
+        view.setText(description);
+    }
+
+    public void startAlarm(View view) {
+        DatePicker datePicker = (DatePicker) findViewById(R.id.fdatepicker_picker);
+        Calendar date = CustomDate.calendarFromDatePicker(datePicker);
+//        date.add(Calendar.DAY_OF_MONTH, Constants.ALARM_TIME);
+
+        Helper.saveDate(this, date);
+
+        Intent intent = new Intent (this, NotificationService.class);
+        PendingIntent pendingIntent = PendingIntent.getService(this, Constants.NOTIFICATION_SERVICE_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, date.getTimeInMillis(), Constants.REPEAT_DELAY, pendingIntent);
+        Helper.setAlarmSet(this, true);
+
+        toggleTerminateVisual(true);
+    }
+
+    public void terminateAlarm(View view) {
+        Helper.clearNotifications(this);
+        Helper.cancelAlarm(this);
+        Helper.setAlarmSet(this, false);
+        Helper.saveDate(this, null);
+        toggleTerminateVisual(false);
+    }
+
+    public void pickerButtonClick(View view) {
+        DatePicker datePicker = (DatePicker) findViewById(R.id.fdatepicker_picker);
+        Calendar date = CustomDate.calendarFromDatePicker(datePicker);
+        hideFragment(picker);
+        setViewText(R.id.main_date, CustomDate.stringFromCalendar(date));
+        updateLayout();
+    }
+
+    public void showHowItWorks(View view) {
+        Intent intent = new Intent(this, WorksActivity.class);
+        startActivity(intent);
+    }
+
     private void updateLayout() {
+        Helper.clearNotifications(this);
         ViewGroup layout = (ViewGroup)findViewById(R.id.main_layout);
         layout.invalidate();
     }

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/from_notif_layout"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.loceryl.locerylalarm.FromNotificationActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/from_notif_background"
+        android:background="@drawable/tela2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/from_notif_background_width"
+        android:layout_height="@dimen/background_height" />
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <Button
+            android:id="@+id/from_notif_btok"
+            android:background="@drawable/btok"
+            android:layout_centerHorizontal="true"
+            android:onClick="snoozerButtonClicked"
+            android:layout_width="@dimen/from_notif_okbutton_width"
+            android:layout_height="@dimen/from_notif_okbutton_height" />
+
+        <Spinner
+            android:id="@+id/from_notif_spinner"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/corner"
+            android:layout_below="@id/from_notif_btok"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
