@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-    NSArray *data = [[NSArray alloc] initWithObjects: @"Não Adiar", @"Adiar 30 minutos", @"Adiar 1h", @"Adiar 4h", nil];
+    NSArray *data = [[NSArray alloc] initWithObjects: @"Não Adiar", @"Adiar 30min", @"Adiar 1h", @"Adiar 4h", nil];
     
     self.delayArray = data;
 	// Do any additional setup after loading the view.
@@ -58,6 +58,7 @@
 
 - (IBAction) setDelayToAlarm:(id)sender
 {
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
     NSInteger selectedDelayIndex = [_snoozePicker selectedRowInComponent:0];
     NSInteger secondsSelected = 0;
@@ -163,6 +164,7 @@
     notification.fireDate = fireDate;
     notification.alertBody = @"É hora de aplicar Loceryl esmalte";
     notification.soundName = @"locerylsound.mp3";
+    notification.repeatInterval = NSWeekCalendarUnit;
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     

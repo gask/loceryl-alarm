@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqJ-WU-1JA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tai-ZG-WPV">
-                                <rect key="frame" x="110" y="310" width="100" height="42"/>
+                                <rect key="frame" x="110" y="260" width="100" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Voltar" image="bt_fechar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-lh-zBj">
-                                <rect key="frame" x="113" y="92" width="210" height="136"/>
+                                <rect key="frame" x="113" y="67" width="210" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">O aplicativo Loceryl irá lembrar você de tratar das suas unhas semanalmente.
 Basta digitar a data que você aplicou Loceryl pela primeira vez.
@@ -49,7 +49,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0A-32-5LQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="691"/>
+            <point key="canvasLocation" x="168" y="679"/>
         </scene>
         <!--Alarm View Controller-->
         <scene sceneID="mMT-vr-hyd">
@@ -69,11 +69,11 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vi6-Eo-HMO">
-                                <rect key="frame" x="-17" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="-17" y="0.0" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8B-yz-06m">
-                                <rect key="frame" x="72" y="275" width="177" height="135"/>
+                                <rect key="frame" x="111" y="226" width="99" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OK" image="bt_ok.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,7 +84,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjm-O9-bhi">
-                                <rect key="frame" x="0.0" y="382" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="276" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="62T-0H-RFZ" id="VWl-Dq-aBc"/>
@@ -119,12 +119,12 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="vIk-wY-at6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_1 ajustada.png" translatesAutoresizingMaskIntoConstraints="NO" id="vIk-wY-at6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-YE-tiU">
-                                <rect key="frame" x="244" y="302" width="52" height="40"/>
+                                <rect key="frame" x="241" y="277" width="46" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ativar alarme" image="bt_ok.png"/>
                                 <connections>
@@ -132,7 +132,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C41-OO-Nhh">
-                                <rect key="frame" x="0.0" y="316" width="319" height="13"/>
+                                <rect key="frame" x="0.0" y="289" width="319" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="O tratamento foi concluído." image="BT_TERMINAR.png">
@@ -143,7 +143,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLy-uu-Cob">
-                                <rect key="frame" x="166" y="226" width="134" height="60"/>
+                                <rect key="frame" x="192" y="205" width="121" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Como funciona?" image="bt_comofunciona.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,14 +153,14 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informe a data da primeira aplicação de Loceryl esmalte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-LT-iQT">
-                                <rect key="frame" x="39" y="284" width="268" height="21"/>
+                                <rect key="frame" x="39" y="257" width="268" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.15367218902381671" green="0.4867165122836557" blue="0.78910495923913038" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxk-E3-v2B">
-                                <rect key="frame" x="47" y="308" width="186" height="30"/>
+                                <rect key="frame" x="47" y="282" width="186" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -237,7 +237,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="bt_comofunciona.png" width="383" height="168"/>
         <image name="bt_fechar.png" width="493" height="213"/>
         <image name="bt_ok.png" width="502" height="383"/>
-        <image name="tela_1.png" width="1579" height="2587"/>
+        <image name="tela_1 ajustada.png" width="1579" height="2587"/>
         <image name="tela_2.png" width="1579" height="2491"/>
         <image name="tela_3.png" width="1349" height="2361"/>
     </resources>

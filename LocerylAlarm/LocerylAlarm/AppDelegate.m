@@ -24,7 +24,7 @@
 {
     UIViewController *alarmView = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"AlarmView"];
     
-    alarmView.modalPresentationStyle = UIModalPresentationFormSheet;
+    alarmView.modalPresentationStyle = UIModalPresentationFullScreen;
     alarmView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self.window.rootViewController presentViewController: alarmView animated:YES completion:nil];
     
