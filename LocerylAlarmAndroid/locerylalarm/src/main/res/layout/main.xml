@@ -36,6 +36,7 @@
             android:gravity="center"
             android:background="@color/white"
             android:layout_below="@id/main_description"
+            android:textSize="@dimen/main_date_text_size"
             android:layout_marginTop="@dimen/double_margin"
             android:layout_marginLeft="@dimen/margin"
             android:onClick="showPicker"

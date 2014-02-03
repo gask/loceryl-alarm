@@ -23,7 +23,7 @@
         android:fontFamily="sans-serif"
         android:textColor="@color/works_description_color"
         android:textSize="@dimen/works_description_text_size"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="@dimen/works_desc1_margintop"
         android:layout_width="@dimen/works_desc1_width"
         android:layout_height="@dimen/works_desc1_height" />
     <TextView

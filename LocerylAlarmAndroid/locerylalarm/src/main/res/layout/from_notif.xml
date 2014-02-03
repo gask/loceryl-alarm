@@ -35,8 +35,8 @@
             android:gravity="center"
             android:background="@drawable/corner"
             android:layout_below="@id/from_notif_btok"
-            android:layout_marginTop="@dimen/double_margin"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/double_margin"
             android:layout_width="@dimen/from_notif_spinner_width"
             android:layout_height="@dimen/from_notif_spinner_height" />
     </RelativeLayout>
