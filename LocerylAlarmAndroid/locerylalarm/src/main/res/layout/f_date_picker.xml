@@ -14,33 +14,32 @@
 
     <FrameLayout
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:padding="5dp"
-        android:background="#000"
         android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/padding_ver"
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:background="#fff"
-            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content">
 
             <DatePicker
                 android:id="@+id/fdatepicker_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp" />
+                android:layout_margin="@dimen/double_margin" />
 
             <Button
-                android:text="Confirmar"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:text="Confirmar!"
+                android:onClick="pickerButtonClick"
                 android:layout_below="@id/fdatepicker_picker"
-                android:layout_marginBottom="10dp"
-                android:clickable="true"
+                android:layout_centerHorizontal="true"
                 android:enabled="true"
-                android:onClick="pickerButtonClick" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/double_margin"
+                android:layout_width="@dimen/picker_btok_width" />
 
         </RelativeLayout>
 

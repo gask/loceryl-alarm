@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/main_background"
         android:background="@drawable/tela1"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_width="@dimen/background_width"
         android:layout_height="@dimen/background_height" />
 
@@ -44,15 +44,6 @@
             android:layout_height="@dimen/main_date_height"
             android:clickable="true" />
         <Button
-            android:id="@+id/main_btterminate"
-            android:background="@drawable/btterminar"
-            android:layout_below="@id/main_description"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/main_btterminate_margintop"
-            android:onClick="terminateAlarm"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/main_btterminate_height" />
-        <Button
             android:id="@+id/main_btok"
             android:background="@drawable/btok"
             android:layout_below="@id/main_description"
@@ -63,6 +54,15 @@
             android:layout_width="@dimen/main_btok_width"
             android:layout_height="@dimen/main_btok_height" />
     </RelativeLayout>
+    <Button
+        android:id="@+id/main_btterminate"
+        android:background="@drawable/btterminar"
+        android:layout_alignTop="@id/main_date_setup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_btterminate_margintop"
+        android:onClick="terminateAlarm"
+        android:layout_width="@dimen/main_btterminate_width"
+        android:layout_height="@dimen/main_btterminate_height" />
     <Button
         android:id="@+id/main_button_works"
         android:clickable="true"

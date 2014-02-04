@@ -4,12 +4,15 @@
     <dimen name="background_height">480dp</dimen>
     <dimen name="double_margin">4dp</dimen>
     <dimen name="margin">2dp</dimen>
+    <dimen name="padding_ver">2dp</dimen>
+    <dimen name="padding_hor">2dp</dimen>
 
     <!--MAIN LAYOUT-->
     <dimen name="main_datecontainer_margintop">226.5dp</dimen>
     <dimen name="main_datecontainer_width">190dp</dimen>
     <dimen name="main_description_text_size">7dp</dimen>
-    <dimen name="main_btterminate_margintop">8dp</dimen>
+    <dimen name="main_btterminate_margintop">20dp</dimen>
+    <dimen name="main_btterminate_width">272dp</dimen>
     <dimen name="main_btterminate_height">15dp</dimen>
     <dimen name="main_date_width">136dp</dimen>
     <dimen name="main_date_height">30dp</dimen>
@@ -26,8 +29,10 @@
     <dimen name="from_notif_viewgroup_margintop">245dp</dimen>
     <dimen name="from_notif_btok_width">88dp</dimen>
     <dimen name="from_notif_btok_height">68dp</dimen>
+    <dimen name="from_notif_spinner_margintop">16dp</dimen>
     <dimen name="from_notif_spinner_width">100dp</dimen>
     <dimen name="from_notif_spinner_height">36dp</dimen>
+    <dimen name="from_notif_spinner_text_size">12dp</dimen>
 
     <!--HOW IT WORKS LAYOUT-->
     <dimen name="works_description_text_size">7dp</dimen>
@@ -39,5 +44,8 @@
     <dimen name="works_btfechar_margintop">247dp</dimen>
     <dimen name="works_btfechar_width">88dp</dimen>
     <dimen name="works_btfechar_height">38dp</dimen>
+
+    <!--DATE PICKER-->
+    <dimen name="picker_btok_width">100dp</dimen>
 
 </resources>

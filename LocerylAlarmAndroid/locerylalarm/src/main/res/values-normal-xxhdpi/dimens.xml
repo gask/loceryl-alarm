@@ -8,7 +8,7 @@
     <dimen name="padding_hor">2dp</dimen>
 
     <!--MAIN LAYOUT-->
-    <dimen name="main_datecontainer_margintop">240dp</dimen>
+    <dimen name="main_datecontainer_margintop">260dp</dimen>
     <dimen name="main_datecontainer_width">190dp</dimen>
     <dimen name="main_description_text_size">7dp</dimen>
     <dimen name="main_btterminate_margintop">20dp</dimen>

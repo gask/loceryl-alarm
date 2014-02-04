@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="@+id/TextView01"
+    android:id="@+id/TextView01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/from_notif_spinner_text_size"
+    android:textColor="@color/black"
+    android:height="@dimen/from_notif_spinner_height"
+    android:gravity="center"
+    android:padding = "@dimen/padding_ver">
+</TextView>
