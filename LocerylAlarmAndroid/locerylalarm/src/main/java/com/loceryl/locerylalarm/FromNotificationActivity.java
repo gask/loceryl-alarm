@@ -47,7 +47,6 @@ public class FromNotificationActivity extends FragmentActivity {
         Helper.saveDate(this, date);
         Helper.createAlarm(this, date);
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Helper.goToView(this, WorksActivity.class);
     }
 }
