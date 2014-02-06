@@ -11,6 +11,11 @@ import java.util.Calendar;
 
 public final class Helper {
 
+    public static void goToView(Context context, Class clazz) {
+        Intent intent = new Intent(context, clazz);
+        context.startActivity(intent);
+    }
+
     public static void saveDate(Context context, Calendar calendar) {
         SharedPreferences preferences = context.getSharedPreferences(Constants.SETTINGS, Context.MODE_PRIVATE);
         if (calendar == null) {

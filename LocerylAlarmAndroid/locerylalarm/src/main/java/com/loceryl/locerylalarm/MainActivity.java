@@ -1,5 +1,6 @@
 package com.loceryl.locerylalarm;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -37,7 +38,7 @@ public class MainActivity extends FragmentActivity {
     protected void onStart() {
         super.onStart();
         Helper.clearNotifications(this);
-        toggleTerminateVisual(Helper.isAlarmSet(this));
+//        toggleTerminateVisual(Helper.isAlarmSet(this));
     }
 
     @Override
@@ -66,39 +67,39 @@ public class MainActivity extends FragmentActivity {
                 .commit();
     }
 
-    public void showView(View view) {
-        view.setEnabled(true);
-        view.setVisibility(View.VISIBLE);
-    }
-
-    public void hideView(View view) {
-        view.setEnabled(false);
-        view.setVisibility(View.INVISIBLE);
-    }
+//    public void showView(View view) {
+//        view.setEnabled(true);
+//        view.setVisibility(View.VISIBLE);
+//    }
+//
+//    public void hideView(View view) {
+//        view.setEnabled(false);
+//        view.setVisibility(View.INVISIBLE);
+//    }
+//
+//    public void toggleTerminateVisual(boolean terminateShown) {
+//        if (terminateShown) {
+//            Calendar date = Helper.loadDate(this);
+//            String description = getResources().getString(R.string.description_set, CustomDate.stringFromCalendar(date), CustomDate.timeFromCalendar(date));
+//            setViewText(R.id.main_description, description);
+//            hideView(findViewById(R.id.main_date));
+//            hideView(findViewById(R.id.main_btok));
+//            showView(findViewById(R.id.main_btterminate));
+//        }
+//        else {
+//            setViewText(R.id.main_date, CustomDate.stringFromCalendar(Calendar.getInstance()));
+//            String description = getResources().getString(R.string.description_unset);
+//            setViewText(R.id.main_description, description);
+//            showView(findViewById(R.id.main_date));
+//            showView(findViewById(R.id.main_btok));
+//            hideView(findViewById(R.id.main_btterminate));
+//        }
+//        updateLayout();
+//    }
 
     public void setViewText(int viewId, String description) {
         TextView view = (TextView)findViewById(viewId);
         view.setText(description);
-    }
-
-    public void toggleTerminateVisual(boolean terminateShown) {
-        if (terminateShown) {
-            Calendar date = Helper.loadDate(this);
-            String description = getResources().getString(R.string.description_set, CustomDate.stringFromCalendar(date), CustomDate.timeFromCalendar(date));
-            setViewText(R.id.main_description, description);
-            hideView(findViewById(R.id.main_date));
-            hideView(findViewById(R.id.main_btok));
-            showView(findViewById(R.id.main_btterminate));
-        }
-        else {
-            setViewText(R.id.main_date, CustomDate.stringFromCalendar(Calendar.getInstance()));
-            String description = getResources().getString(R.string.description_unset);
-            setViewText(R.id.main_description, description);
-            showView(findViewById(R.id.main_date));
-            showView(findViewById(R.id.main_btok));
-            hideView(findViewById(R.id.main_btterminate));
-        }
-        updateLayout();
     }
 
     public void startAlarm(View view) {
@@ -108,14 +109,14 @@ public class MainActivity extends FragmentActivity {
 
         Helper.saveDate(this, date);
         Helper.createAlarm(this, date);
-        toggleTerminateVisual(true);
+//        toggleTerminateVisual(true);
     }
 
     public void terminateAlarm(View view) {
         Helper.saveDate(this, null);
         Helper.cancelAlarm(this);
         Helper.clearNotifications(this);
-        toggleTerminateVisual(false);
+//        toggleTerminateVisual(false);
     }
 
     public void pickerButtonClick(View view) {
@@ -127,8 +128,12 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void showHowItWorks(View view) {
-        Intent intent = new Intent(this, WorksActivity.class);
-        startActivity(intent);
+        AlertDialog howItWorks = new AlertDialog.Builder(this)
+                .setTitle(R.string.works_title)
+                .setMessage(R.string.main_description)
+                .setNegativeButton(R.string.works_button_dismiss, null)
+                .create();
+        howItWorks.show();
     }
 
     private void updateLayout() {
