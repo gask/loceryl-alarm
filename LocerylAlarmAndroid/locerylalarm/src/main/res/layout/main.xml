@@ -57,7 +57,7 @@
     <Button
         android:id="@+id/main_btterminate"
         android:background="@drawable/btterminar"
-        android:layout_alignTop="@id/main_date_setup"
+        android:layout_below="@id/main_date_setup"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/main_btterminate_margintop"
         android:onClick="terminateAlarm"

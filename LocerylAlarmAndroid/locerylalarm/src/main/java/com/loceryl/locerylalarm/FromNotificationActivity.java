@@ -44,6 +44,10 @@ public class FromNotificationActivity extends FragmentActivity {
         Calendar date = Calendar.getInstance();
         date.add(Calendar.MILLISECOND, Constants.DELAYS[delay]);
 
+        if (delay == Constants.NO_DELAY) {
+            Helper.setUserAppliedOnce(this, true);
+        }
+
         Helper.saveDate(this, date);
         Helper.createAlarm(this, date);
 

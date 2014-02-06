@@ -23,9 +23,7 @@ public class MainActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
 
-
         picker = new PickerFragment();
-
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.main_layout, picker)
@@ -38,7 +36,14 @@ public class MainActivity extends FragmentActivity {
     protected void onStart() {
         super.onStart();
         Helper.clearNotifications(this);
-//        toggleTerminateVisual(Helper.isAlarmSet(this));
+
+        setViewText(R.id.main_date, CustomDate.stringFromCalendar(Calendar.getInstance()));
+
+        View terminateButton = findViewById(R.id.main_btterminate);
+        hideView(terminateButton);
+        if (Helper.isAlarmSet(this) && Helper.userAlreadyAppliedOnce(this)) {
+            showView(terminateButton);
+        }
     }
 
     @Override
@@ -67,15 +72,15 @@ public class MainActivity extends FragmentActivity {
                 .commit();
     }
 
-//    public void showView(View view) {
-//        view.setEnabled(true);
-//        view.setVisibility(View.VISIBLE);
-//    }
-//
-//    public void hideView(View view) {
-//        view.setEnabled(false);
-//        view.setVisibility(View.INVISIBLE);
-//    }
+    public void showView(View view) {
+        view.setEnabled(true);
+        view.setVisibility(View.VISIBLE);
+    }
+
+    public void hideView(View view) {
+        view.setEnabled(false);
+        view.setVisibility(View.INVISIBLE);
+    }
 //
 //    public void toggleTerminateVisual(boolean terminateShown) {
 //        if (terminateShown) {
@@ -109,6 +114,13 @@ public class MainActivity extends FragmentActivity {
 
         Helper.saveDate(this, date);
         Helper.createAlarm(this, date);
+
+        AlertDialog alarmSet = new AlertDialog.Builder(this)
+                .setTitle(R.string.alarm_set_title)
+                .setMessage(getString(R.string.description_set, CustomDate.stringFromCalendar(date), CustomDate.timeFromCalendar(date)))
+                .setNegativeButton(R.string.close_button_text, null)
+                .create();
+        alarmSet.show();
 //        toggleTerminateVisual(true);
     }
 
@@ -131,7 +143,7 @@ public class MainActivity extends FragmentActivity {
         AlertDialog howItWorks = new AlertDialog.Builder(this)
                 .setTitle(R.string.works_title)
                 .setMessage(R.string.main_description)
-                .setNegativeButton(R.string.works_button_dismiss, null)
+                .setNegativeButton(R.string.close_button_text, null)
                 .create();
         howItWorks.show();
     }

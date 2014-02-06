@@ -9,8 +9,10 @@ public final class Constants {
     public static final String NOTIFICATION_MESSAGE = "Hora de aplicar o Loceryl esmalte!";
     public static final int ALARM_TIME = 7;
     public static final long REPEAT_DELAY = (1000*60*60*24) * ALARM_TIME;
+    public static final int NO_DELAY = 0;
     public static final String SETTINGS = "settings";
     public static final String ALARM_SET = "alarmSet";
+    public static final String USER_APPLIED_ONCE = "userAppliedOnce";
     public static final String DATE = "date";
     public static final String DATE_FORMAT = "%02d/%02d/%d";
     public static final String HOUR_FORMAT = "%02d:%02d";

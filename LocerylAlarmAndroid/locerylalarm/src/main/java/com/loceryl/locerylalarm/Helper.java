@@ -52,6 +52,7 @@ public final class Helper {
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         alarmManager.cancel(pendingIntent);
         setAlarmSet(context, false);
+        setUserAppliedOnce(context, false);
     }
 
     public static boolean isAlarmSet(Context context) {
@@ -62,6 +63,16 @@ public final class Helper {
     public static void setAlarmSet(Context context, boolean isSet) {
         SharedPreferences preferences = context.getSharedPreferences(Constants.SETTINGS, Context.MODE_PRIVATE);
         preferences.edit().putBoolean(Constants.ALARM_SET, isSet).commit();
+    }
+
+    public static boolean userAlreadyAppliedOnce(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(Constants.SETTINGS, Context.MODE_PRIVATE);
+        return preferences.getBoolean(Constants.USER_APPLIED_ONCE, false);
+    }
+
+    public static void setUserAppliedOnce(Context context, boolean userApplied) {
+        SharedPreferences preferences = context.getSharedPreferences(Constants.SETTINGS, Context.MODE_PRIVATE);
+        preferences.edit().putBoolean(Constants.USER_APPLIED_ONCE, userApplied).commit();
     }
 
     public static void clearNotifications(Context context) {

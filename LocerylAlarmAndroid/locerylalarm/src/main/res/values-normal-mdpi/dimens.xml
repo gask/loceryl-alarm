@@ -10,15 +10,15 @@
     <!--MAIN LAYOUT-->
     <dimen name="main_datecontainer_margintop">226.5dp</dimen>
     <dimen name="main_datecontainer_width">190dp</dimen>
-    <dimen name="main_description_text_size">7dp</dimen>
+    <dimen name="main_description_text_size">10.5dp</dimen>
     <dimen name="main_btterminate_margintop">20dp</dimen>
     <dimen name="main_btterminate_width">272dp</dimen>
     <dimen name="main_btterminate_height">15dp</dimen>
     <dimen name="main_date_width">136dp</dimen>
     <dimen name="main_date_height">30dp</dimen>
     <dimen name="main_date_text_size">18dp</dimen>
-    <dimen name="main_btok_width">44dp</dimen>
-    <dimen name="main_btok_height">34dp</dimen>
+    <dimen name="main_btok_width">36dp</dimen>
+    <dimen name="main_btok_height">28dp</dimen>
     <dimen name="main_btworks_marginbottom">50dp</dimen>
     <dimen name="main_btworks_marginright">15dp</dimen>
     <dimen name="main_btworks_width">100dp</dimen>
