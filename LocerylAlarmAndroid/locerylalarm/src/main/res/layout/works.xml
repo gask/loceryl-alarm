@@ -14,30 +14,6 @@
         android:layout_width="@dimen/background_width"
         android:layout_height="@dimen/background_height" />
 
-    <TextView
-        android:id="@+id/works_first_description"
-        android:text="@string/main_description"
-        android:gravity="fill_horizontal"
-        android:layout_alignTop="@id/works_background"
-        android:layout_alignRight="@id/works_background"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:textColor="@color/works_description_color"
-        android:textSize="@dimen/works_description_text_size"
-        android:layout_marginTop="@dimen/works_desc1_margintop"
-        android:layout_width="@dimen/works_desc1_width"
-        android:layout_height="@dimen/works_desc1_height" />
-    <TextView
-        android:text="@string/main_description_end"
-        android:gravity="fill_horizontal"
-        android:layout_alignLeft="@id/works_first_description"
-        android:layout_below="@id/works_first_description"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:textColor="@color/works_description_color"
-        android:textSize="@dimen/works_description_text_size"
-        android:layout_width="@dimen/works_desc2_width"
-        android:layout_height="@dimen/works_desc2_height" />
     <Button
         android:background="@drawable/btfechar"
         android:layout_alignTop="@id/works_background"
