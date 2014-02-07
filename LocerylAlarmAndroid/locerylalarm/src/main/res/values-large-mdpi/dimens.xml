@@ -38,11 +38,6 @@
 
     <!--HOW IT WORKS LAYOUT-->
     <dimen name="works_description_text_size">11dp</dimen>
-    <dimen name="works_desc1_margintop">137dp</dimen>
-    <dimen name="works_desc1_width">276dp</dimen>
-    <dimen name="works_desc1_height">90dp</dimen>
-    <dimen name="works_desc2_width">160dp</dimen>
-    <dimen name="works_desc2_height">70dp</dimen>
     <dimen name="works_btfechar_margintop">420dp</dimen>
     <dimen name="works_btfechar_width">150dp</dimen>
     <dimen name="works_btfechar_height">65dp</dimen>
