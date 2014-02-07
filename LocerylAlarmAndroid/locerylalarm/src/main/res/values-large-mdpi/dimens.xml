@@ -1,35 +1,37 @@
 <resources>
     <!--SHARED-->
-    <dimen name="background_width">433dp</dimen>
     <dimen name="background_height">800dp</dimen>
-    <dimen name="double_margin">8dp</dimen>
-    <dimen name="margin">4dp</dimen>
+    <dimen name="background_width">487dp</dimen>
+    <dimen name="from_notif_background_width">507dp</dimen>
+    <dimen name="works_background_width">457dp</dimen>
+    <dimen name="double_margin">3dp</dimen>
+    <dimen name="margin">1.5dp</dimen>
     <dimen name="padding_ver">4dp</dimen>
     <dimen name="padding_hor">4dp</dimen>
 
     <!--MAIN LAYOUT-->
-    <dimen name="main_datecontainer_margintop">387dp</dimen>
-    <dimen name="main_datecontainer_width">330dp</dimen>
-    <dimen name="main_description_text_size">13dp</dimen>
-    <dimen name="main_btterminate_margintop">36dp</dimen>
-    <dimen name="main_btterminate_width">435dp</dimen>
+    <dimen name="main_datecontainer_margintop">376dp</dimen>
+    <dimen name="main_datecontainer_width">350dp</dimen>
+    <dimen name="main_description_text_size">17dp</dimen>
+    <dimen name="main_btterminate_margintop">24dp</dimen>
+    <dimen name="main_btterminate_width">434dp</dimen>
     <dimen name="main_btterminate_height">24dp</dimen>
     <dimen name="main_date_width">227dp</dimen>
-    <dimen name="main_date_height">50dp</dimen>
-    <dimen name="main_date_text_size">30dp</dimen>
-    <dimen name="main_btok_width">74dp</dimen>
-    <dimen name="main_btok_height">57dp</dimen>
-    <dimen name="main_btworks_marginbottom">85dp</dimen>
-    <dimen name="main_btworks_marginright">15dp</dimen>
+    <dimen name="main_date_height">30dp</dimen>
+    <dimen name="main_date_text_size">25dp</dimen>
+    <dimen name="main_btok_margintop">26dp</dimen>
+    <dimen name="main_btok_width">62dp</dimen>
+    <dimen name="main_btok_height">48dp</dimen>
+    <dimen name="main_btworks_marginbottom">82dp</dimen>
+    <dimen name="main_btworks_marginright">25dp</dimen>
     <dimen name="main_btworks_width">166dp</dimen>
     <dimen name="main_btworks_height">73dp</dimen>
 
     <!--FROM NOTIFICATION LAYOUT-->
-    <dimen name="from_notif_background_width">450dp</dimen>
-    <dimen name="from_notif_viewgroup_margintop">435dp</dimen>
-    <dimen name="from_notif_btok_width">132dp</dimen>
-    <dimen name="from_notif_btok_height">113dp</dimen>
-    <dimen name="from_notif_spinner_margintop">16dp</dimen>
+    <dimen name="from_notif_viewgroup_margintop">440dp</dimen>
+    <dimen name="from_notif_btok_width">157dp</dimen>
+    <dimen name="from_notif_btok_height">120dp</dimen>
+    <dimen name="from_notif_spinner_margintop">40dp</dimen>
     <dimen name="from_notif_spinner_width">150dp</dimen>
     <dimen name="from_notif_spinner_height">52dp</dimen>
     <dimen name="from_notif_spinner_text_size">12dp</dimen>
