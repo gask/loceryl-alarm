@@ -1,51 +1,47 @@
 <resources>
     <!--SHARED-->
-    <dimen name="background_width">693dp</dimen>
-    <dimen name="background_height">1280dp</dimen>
-    <dimen name="double_margin">12dp</dimen>
-    <dimen name="margin">6dp</dimen>
+    <dimen name="background_height">1600dp</dimen>
+    <dimen name="background_width">975dp</dimen>
+    <dimen name="from_notif_background_width">1014dp</dimen>
+    <dimen name="works_background_width">914dp</dimen>
+    <dimen name="double_margin">4dp</dimen>
+    <dimen name="margin">2dp</dimen>
     <dimen name="padding_ver">6dp</dimen>
     <dimen name="padding_hor">6dp</dimen>
 
     <!--MAIN LAYOUT-->
-    <dimen name="main_datecontainer_margintop">622dp</dimen>
-    <dimen name="main_datecontainer_width">528dp</dimen>
-    <dimen name="main_description_text_size">21dp</dimen>
-    <dimen name="main_btterminate_margintop">24dp</dimen>
-    <dimen name="main_btterminate_width">272dp</dimen>
-    <dimen name="main_btterminate_height">45dp</dimen>
+    <dimen name="main_datecontainer_margintop">605dp</dimen>
+    <dimen name="main_datecontainer_width">590dp</dimen>
+    <dimen name="main_description_text_size">28dp</dimen>
+    <dimen name="main_btterminate_margintop">30dp</dimen>
+    <dimen name="main_btterminate_width">905dp</dimen>
+    <dimen name="main_btterminate_height">50dp</dimen>
     <dimen name="main_date_width">365dp</dimen>
-    <dimen name="main_date_height">87dp</dimen>
+    <dimen name="main_date_height">50dp</dimen>
     <dimen name="main_date_text_size">40dp</dimen>
-    <dimen name="main_btok_width">116dp</dimen>
-    <dimen name="main_btok_height">90dp</dimen>
-    <dimen name="main_btworks_marginbottom">128dp</dimen>
-    <dimen name="main_btworks_marginright">24dp</dimen>
-    <dimen name="main_btworks_width">266dp</dimen>
-    <dimen name="main_btworks_height">117dp</dimen>
+    <dimen name="main_btok_margintop">36dp</dimen>
+    <dimen name="main_btok_width">112dp</dimen>
+    <dimen name="main_btok_height">86dp</dimen>
+    <dimen name="main_btworks_marginbottom">124dp</dimen>
+    <dimen name="main_btworks_marginright">36dp</dimen>
+    <dimen name="main_btworks_width">296dp</dimen>
+    <dimen name="main_btworks_height">130dp</dimen>
 
     <!--FROM NOTIFICATION LAYOUT-->
-    <dimen name="from_notif_background_width">720dp</dimen>
     <dimen name="from_notif_viewgroup_margintop">700dp</dimen>
-    <dimen name="from_notif_btok_width">288dp</dimen>
-    <dimen name="from_notif_btok_height">180dp</dimen>
-    <dimen name="from_notif_spinner_margintop">16dp</dimen>
+    <dimen name="from_notif_btok_width">262dp</dimen>
+    <dimen name="from_notif_btok_height">200dp</dimen>
+    <dimen name="from_notif_spinner_margintop">60dp</dimen>
     <dimen name="from_notif_spinner_width">270dp</dimen>
     <dimen name="from_notif_spinner_height">90dp</dimen>
     <dimen name="from_notif_spinner_text_size">32dp</dimen>
 
     <!--HOW IT WORKS LAYOUT-->
-    <dimen name="works_description_text_size">18dp</dimen>
-    <dimen name="works_desc1_margintop">213dp</dimen>
-    <dimen name="works_desc1_width">430dp</dimen>
-    <dimen name="works_desc1_height">155dp</dimen>
-    <dimen name="works_desc2_width">260dp</dimen>
-    <dimen name="works_desc2_height">70dp</dimen>
-    <dimen name="works_btfechar_margintop">680dp</dimen>
-    <dimen name="works_btfechar_width">255dp</dimen>
-    <dimen name="works_btfechar_height">110dp</dimen>
+    <dimen name="works_btfechar_margintop">656dp</dimen>
+    <dimen name="works_btfechar_width">231dp</dimen>
+    <dimen name="works_btfechar_height">100dp</dimen>
 
     <!--DATE PICKER-->
-    <dimen name="picker_btok_width">100dp</dimen>
+    <dimen name="picker_btok_width">140dp</dimen>
 
 </resources>

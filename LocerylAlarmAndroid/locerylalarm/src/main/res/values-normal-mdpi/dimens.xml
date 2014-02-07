@@ -38,7 +38,6 @@
     <dimen name="from_notif_spinner_text_size">13dp</dimen>
 
     <!--HOW IT WORKS LAYOUT-->
-    <dimen name="works_description_text_size">7dp</dimen>
     <dimen name="works_btfechar_margintop">247dp</dimen>
     <dimen name="works_btfechar_width">88dp</dimen>
     <dimen name="works_btfechar_height">38dp</dimen>

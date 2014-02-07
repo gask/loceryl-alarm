@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/double_margin"
-                android:layout_padding="@dimen/margin" />
+                android:padding="@dimen/margin" />
 
             <Button
                 android:text="Confirmar!"
