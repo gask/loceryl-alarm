@@ -127,6 +127,7 @@ public class MainActivity extends FragmentActivity {
         Helper.saveDate(this, null);
         Helper.cancelAlarm(this);
         Helper.clearNotifications(this);
+        hideView(findViewById(R.id.main_btterminate));
 //        toggleTerminateVisual(false);
     }
 
