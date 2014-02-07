@@ -46,9 +46,9 @@
         <Button
             android:id="@+id/main_btok"
             android:background="@drawable/btok"
-            android:layout_below="@id/main_description"
+            android:layout_alignTop="@id/main_description"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/margin"
+            android:layout_marginTop="@dimen/main_btok_margintop"
             android:layout_marginRight="@dimen/margin"
             android:onClick="startAlarm"
             android:layout_width="@dimen/main_btok_width"

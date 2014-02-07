@@ -121,7 +121,6 @@ public class MainActivity extends FragmentActivity {
                 .setNegativeButton(R.string.close_button_text, null)
                 .create();
         alarmSet.show();
-//        toggleTerminateVisual(true);
     }
 
     public void terminateAlarm(View view) {

@@ -4,6 +4,7 @@
     <string name="app_name">Loceryl Alarm</string>
     <string name="description_unset">Informe a data da primeira aplicação de Loceryl esmalte</string>
     <string name="description_set">O horário para a próxima aplicação é: %1$s %2$s</string>
+    <string name="description_1set">O horário para a próxima aplicação é: 24/12/2014 18:45</string>
     <string name="main_description">O aplicativo Loceryl irá lembrar você de tratar das suas unhas semanalmente.\nBasta digitar a data que você aplicou Loceryl pela primeira vez. Clique em Ok e pronto!\nApós 7 dias o aplicativo irá avisar sobre uma nova aplicação.\nCaso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</string>
     <string name="action_settings">Settings</string>
 
