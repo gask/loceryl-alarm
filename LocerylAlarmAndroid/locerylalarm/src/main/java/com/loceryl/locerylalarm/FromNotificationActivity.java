@@ -31,6 +31,11 @@ public class FromNotificationActivity extends FragmentActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
     public void onBackPressed() {
         snoozeButtonClicked(null);
     }
@@ -52,5 +57,6 @@ public class FromNotificationActivity extends FragmentActivity {
         Helper.createAlarm(this, date);
 
         Helper.goToView(this, WorksActivity.class);
+        finish();
     }
 }

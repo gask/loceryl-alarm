@@ -14,8 +14,14 @@ public class WorksActivity extends FragmentActivity {
         setContentView(R.layout.works);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     public void backToMain(View view) {
         onBackPressed();
+        finish();
     }
 
 }

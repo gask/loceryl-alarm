@@ -60,7 +60,7 @@ public class NotificationService extends Service {
         stackBuilder.addNextIntent(notificationIntent);
 
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(Constants.FROM_NOTIF_ACTIVITY_ID, PendingIntent.FLAG_UPDATE_CURRENT);
-        int icon = R.drawable.ic_launcher;
+        int icon = R.drawable.icon;
         long when = Calendar.getInstance().getTimeInMillis();
         String alarmPath = String.format("%s://%s/%s", ContentResolver.SCHEME_ANDROID_RESOURCE, getPackageName(), R.raw.locerylsound);
         Uri alarmSound = Uri.parse(alarmPath);
