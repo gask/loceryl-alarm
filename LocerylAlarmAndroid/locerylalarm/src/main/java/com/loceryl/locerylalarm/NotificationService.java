@@ -77,7 +77,6 @@ public class NotificationService extends Service {
 
         NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify(0, notification);
-        Toast.makeText(this, Constants.NOTIFICATION_MESSAGE, Toast.LENGTH_LONG).show();
     }
 
 }
