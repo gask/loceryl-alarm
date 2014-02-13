@@ -53,6 +53,17 @@
     
 }
 
+- (IBAction)callHowItWorksAlert:(id)sender
+{
+    NSString *howItWorks = @"O aplicativo Loceryl irá lembrar você de tratar das suas unhas semanalmente. ";
+    howItWorks = [howItWorks stringByAppendingString: @"Basta digitar a data que você aplicou Loceryl pela primeira vez. "];
+    howItWorks = [howItWorks stringByAppendingString: @"Clique em Ok e pronto! "];
+    howItWorks = [howItWorks stringByAppendingString:@"Após 7 dias o aplicativo irá avisar sobre uma nova aplicação. "];
+    howItWorks = [howItWorks stringByAppendingString:@" Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”."];
+    
+    [self presentMessage: howItWorks];
+}
+
 -(void)moveToolbarToFront
 {
     CGRect toolbarTargetFrame = CGRectMake(0, 173, 320, 44);
@@ -125,8 +136,8 @@
         NSString *alarmHour = [dateFormatter stringFromDate: [[NSUserDefaults standardUserDefaults] objectForKey:@"alarmDate"]];
         
         //[dayField removeFromSuperview];
-        dayField.hidden = YES;
-        activateAlarmButton.hidden = YES;
+        //dayField.hidden = YES;
+        //activateAlarmButton.hidden = YES;
         //[activateAlarmButton removeFromSuperview];
         
         
@@ -149,8 +160,8 @@
 //        [self.view addSubview: dayField];
 //        [self.view addSubview: activateAlarmButton];
 //        [finishTreatmentBtn removeFromSuperview];
-        dayField.hidden = NO;
-        activateAlarmButton.hidden = NO;
+        //dayField.hidden = NO;
+        //activateAlarmButton.hidden = NO;
         finishTreatmentBtn.hidden = YES;
         
 //        activateAlarmButton.frame = CGRectMake(244, 302, 52, 40);
@@ -190,24 +201,25 @@
 
 - (IBAction)alarmSetButtonTapped:(id)sender {
     
-    BOOL alarmSet = [[NSUserDefaults standardUserDefaults] boolForKey: @"alarmSet"];
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+//    BOOL alarmSet = [[NSUserDefaults standardUserDefaults] boolForKey: @"alarmSet"];
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
-    if(alarmSet)
-    {
-        NSDate *alarmDate = [[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
-        
-        NSDateComponents *alarmDateComponents = [gregorian components:(NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:alarmDate];
-        
-        [self presentMessage: [NSString stringWithFormat:@"O alarme já está programado para o dia %i às %02i:%02i", [alarmDateComponents day], [alarmDateComponents hour],[alarmDateComponents minute]]];
-    }
-    else
-    {
+//    if(alarmSet)
+//    {
+//        NSDate *alarmDate = [[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
+//        
+//        NSDateComponents *alarmDateComponents = [gregorian components:(NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:alarmDate];
+//        
+//        
+//        [self presentMessage: [NSString stringWithFormat:@"O alarme já está programado para o dia %i às %02i:%02i", [alarmDateComponents day], [alarmDateComponents hour],[alarmDateComponents minute]]];
+//    }
+//    else
+//    {
         //[fieldDate setDay: dayField.text.intValue];
         
         NSDate *now = [NSDate date];
-        
         
         NSDateComponents *nowComponents = [gregorian components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:now];
         
@@ -236,10 +248,10 @@
   //      [self scheduleLocalNotificationWithDate: alarmDate];
         [self scheduleLocalNotificationWithDate: teste];
         
-        [self presentMessage:@"O aplicativo vai lembrá-lo da aplicação em 7 dias."];
+        [self presentMessage:@"O aplicativo vai lembrá-lo da aplicação em 7 dias da data informada."];
         
         [self configureView];
-    }
+//    }
     
 }
 

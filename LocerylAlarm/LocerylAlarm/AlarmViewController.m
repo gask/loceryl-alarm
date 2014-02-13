@@ -76,7 +76,7 @@
         NSLog(@"deu erro");
     }
     
-    NSLog(@"selecionou %i horas.", secondsSelected/60/60);
+    NSLog(@"selecionou %li horas.", secondsSelected/60/60);
     
     NSDate *oldAlarmDate = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
     
@@ -86,7 +86,14 @@
     
     [self scheduleLocalNotificationWithDate: alarmDate];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    UIViewController *followUpView = [self.storyboard instantiateViewControllerWithIdentifier:@"FollowUpView"];
+    
+    followUpView.modalPresentationStyle = UIModalPresentationFullScreen;
+    followUpView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController: followUpView animated:YES completion:nil];
+
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"alarmSet" object:nil];
     

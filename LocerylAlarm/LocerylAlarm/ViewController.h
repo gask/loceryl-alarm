@@ -28,5 +28,6 @@
 -(IBAction) alarmSetButtonTapped:(id)sender;
 -(IBAction) alarmCancelButtonTapped:(id)sender;
 -(IBAction) doneAction: (id) sender;
+-(IBAction) callHowItWorksAlert:(id)sender;
 
 @end

@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="Atd-0e-g6G">
             <objects>
-                <viewController id="sdN-os-7Uk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FollowUpView" id="sdN-os-7Uk" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2XL-6z-16z"/>
                         <viewControllerLayoutGuide type="bottom" id="aqn-GH-z2X"/>
@@ -30,18 +30,6 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="2Ha-sx-S3O"/>
                                 </connections>
                             </button>
-                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-lh-zBj">
-                                <rect key="frame" x="113" y="67" width="210" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">O aplicativo Loceryl irá lembrar você de tratar das suas unhas semanalmente.
-Basta digitar a data que você aplicou Loceryl pela primeira vez.
-Clique em Ok e pronto!
-Após 7 dias o aplicativo irá avisar sobre uma nova aplicação.
-Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <color key="textColor" red="0.78910495920000001" green="0.0" blue="0.34523660723539057" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -132,7 +120,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C41-OO-Nhh">
-                                <rect key="frame" x="0.0" y="289" width="319" height="13"/>
+                                <rect key="frame" x="0.0" y="438" width="319" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="O tratamento foi concluído." image="BT_TERMINAR.png">
@@ -149,7 +137,7 @@ Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”</
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sdN-os-7Uk" kind="modal" id="fPc-Jk-56y"/>
+                                    <action selector="callHowItWorksAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o1u-YU-ehA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informe a data da primeira aplicação de Loceryl esmalte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-LT-iQT">
