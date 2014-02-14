@@ -1,4 +1,4 @@
-package com.loceryl.locerylalarm;
+package br.com.agaf.locerylalarm;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
-import android.widget.Toast;
 
 import java.util.Calendar;
 

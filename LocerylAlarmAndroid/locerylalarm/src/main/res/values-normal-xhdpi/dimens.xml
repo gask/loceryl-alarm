@@ -10,7 +10,7 @@
     <dimen name="padding_hor">2dp</dimen>
 
     <!--MAIN LAYOUT-->
-    <dimen name="main_datecontainer_margintop">283dp</dimen>
+    <dimen name="main_datecontainer_margintop">303dp</dimen>
     <dimen name="main_datecontainer_width">260dp</dimen>
     <dimen name="main_description_text_size">14dp</dimen>
     <dimen name="main_btterminate_margintop">16dp</dimen>
@@ -19,10 +19,10 @@
     <dimen name="main_date_width">176dp</dimen>
     <dimen name="main_date_height">22dp</dimen>
     <dimen name="main_date_text_size">16dp</dimen>
-    <dimen name="main_btok_margintop">20dp</dimen>
+    <dimen name="main_btok_margintop">30dp</dimen>
     <dimen name="main_btok_width">49dp</dimen>
     <dimen name="main_btok_height">38dp</dimen>
-    <dimen name="main_btworks_marginbottom">58dp</dimen>
+    <dimen name="main_btworks_marginbottom">67dp</dimen>
     <dimen name="main_btworks_marginright">15dp</dimen>
     <dimen name="main_btworks_width">136dp</dimen>
     <dimen name="main_btworks_height">60dp</dimen>

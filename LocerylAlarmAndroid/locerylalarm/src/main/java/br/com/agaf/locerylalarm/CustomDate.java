@@ -1,4 +1,4 @@
-package com.loceryl.locerylalarm;
+package br.com.agaf.locerylalarm;
 
 import android.widget.DatePicker;
 

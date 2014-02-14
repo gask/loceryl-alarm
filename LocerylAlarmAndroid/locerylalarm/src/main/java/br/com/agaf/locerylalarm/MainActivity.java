@@ -1,7 +1,6 @@
-package com.loceryl.locerylalarm;
+package br.com.agaf.locerylalarm;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -41,7 +40,7 @@ public class MainActivity extends FragmentActivity {
 
         View terminateButton = findViewById(R.id.main_btterminate);
         hideView(terminateButton);
-        if (Helper.isAlarmSet(this) && Helper.userAlreadyAppliedOnce(this)) {
+        if (Helper.isAlarmSet(this)) {
             showView(terminateButton);
         }
     }
@@ -121,6 +120,8 @@ public class MainActivity extends FragmentActivity {
                 .setNegativeButton(R.string.close_button_text, null)
                 .create();
         alarmSet.show();
+
+        showView(findViewById(R.id.main_btterminate));
     }
 
     public void terminateAlarm(View view) {

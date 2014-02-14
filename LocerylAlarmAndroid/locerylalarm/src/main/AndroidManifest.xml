@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.loceryl.locerylalarm" >
+    package="br.com.agaf.locerylalarm" >
 
     <supports-screens
         android:resizeable="true" />
@@ -11,9 +11,10 @@
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:debuggable="false">
         <activity
-            android:name="com.loceryl.locerylalarm.MainActivity"
+            android:name="br.com.agaf.locerylalarm.MainActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
@@ -22,18 +23,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.loceryl.locerylalarm.FromNotificationActivity"
+            android:name="br.com.agaf.locerylalarm.FromNotificationActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.loceryl.locerylalarm.WorksActivity"
+            android:name="br.com.agaf.locerylalarm.WorksActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
         </activity>
-        <service android:name="com.loceryl.locerylalarm.NotificationService"/>
+        <service android:name="br.com.agaf.locerylalarm.NotificationService"/>
     </application>
 
 </manifest>

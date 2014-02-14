@@ -4,7 +4,7 @@
     android:background="@color/white"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.loceryl.locerylalarm.WorksActivity"
+    tools:context="br.com.agaf.locerylalarm.WorksActivity"
     tools:ignore="MergeRootFrame" >
 
     <ImageView

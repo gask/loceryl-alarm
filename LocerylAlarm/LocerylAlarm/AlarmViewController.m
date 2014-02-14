@@ -63,7 +63,7 @@
     NSInteger selectedDelayIndex = [_snoozePicker selectedRowInComponent:0];
     NSInteger secondsSelected = 0;
     
-    if(selectedDelayIndex == 1) secondsSelected = 10;//30*60;
+    if(selectedDelayIndex == 1) secondsSelected = 30*60;
     else if(selectedDelayIndex == 2) secondsSelected = 60*60;
     else if(selectedDelayIndex == 3) secondsSelected = 4*60*60;
     else if(selectedDelayIndex == 0)

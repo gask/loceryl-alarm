@@ -1,4 +1,4 @@
-package com.loceryl.locerylalarm;
+package br.com.agaf.locerylalarm;
 
 /**
  * Created by szzaass on 02/02/14.

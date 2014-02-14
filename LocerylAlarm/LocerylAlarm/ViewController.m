@@ -243,11 +243,11 @@
         
         NSLog(@"set tapped, date: %@",dateTimeString);
         
-        NSDate *teste = [NSDate dateWithTimeIntervalSinceNow:10];
-        
-  //      [self scheduleLocalNotificationWithDate: alarmDate];
-        [self scheduleLocalNotificationWithDate: teste];
-        
+//        NSDate *teste = [NSDate dateWithTimeIntervalSinceNow:10];
+    
+        [self scheduleLocalNotificationWithDate: alarmDate];
+//        [self scheduleLocalNotificationWithDate: teste];
+    
         [self presentMessage:@"O aplicativo vai lembrá-lo da aplicação em 7 dias da data informada."];
         
         [self configureView];

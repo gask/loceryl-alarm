@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Loceryl Alarm</string>
+    <string name="app_name">LocerylAlarm</string>
     <string name="description_unset">Informe a data da primeira aplicação de Loceryl esmalte</string>
     <string name="description_set">O horário para a próxima aplicação é: %1$s %2$s</string>
     <string name="description_1set">O horário para a próxima aplicação é: 24/12/2014 18:45</string>
