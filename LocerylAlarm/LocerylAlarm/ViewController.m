@@ -56,10 +56,10 @@
 - (IBAction)callHowItWorksAlert:(id)sender
 {
     NSString *howItWorks = @"O aplicativo Loceryl irá lembrar você de tratar das suas unhas semanalmente. ";
-    howItWorks = [howItWorks stringByAppendingString: @"Basta digitar a data que você aplicou Loceryl pela primeira vez. "];
+    howItWorks = [howItWorks stringByAppendingString: @"Basta digitar a data que você aplicou Loceryl esmalte pela última vez. "];
     howItWorks = [howItWorks stringByAppendingString: @"Clique em Ok e pronto! "];
     howItWorks = [howItWorks stringByAppendingString:@"Após 7 dias o aplicativo irá avisar sobre uma nova aplicação. "];
-    howItWorks = [howItWorks stringByAppendingString:@" Caso não queira mais ser lembrado, basta selecionar “Terminar Tratamento”."];
+    howItWorks = [howItWorks stringByAppendingString:@" Caso não queira mais ser lembrado, basta selecionar “Não receber mais os avisos”."];
     
     [self presentMessage: howItWorks];
 }
@@ -151,7 +151,7 @@
     }
     else
     {
-        description.text = @"Informe a data da primeira aplicação de Loceryl esmalte";
+        description.text = @"Informe a data da última aplicação de Loceryl esmalte";
         
        
         

@@ -140,8 +140,8 @@
                                     <action selector="callHowItWorksAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o1u-YU-ehA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informe a data da primeira aplicação de Loceryl esmalte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-LT-iQT">
-                                <rect key="frame" x="39" y="257" width="268" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informe a data da última aplicação de Loceryl esmalte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-LT-iQT">
+                                <rect key="frame" x="41" y="257" width="268" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.15367218902381671" green="0.4867165122836557" blue="0.78910495923913038" alpha="1" colorSpace="calibratedRGB"/>

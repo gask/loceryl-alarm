@@ -26,6 +26,7 @@
 		85A690AD18AD85A900351FCC /* screenshot1_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A690AA18AD85A900351FCC /* screenshot1_ipad.png */; };
 		85A690AE18AD85A900351FCC /* screenshot1_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A690AB18AD85A900351FCC /* screenshot1_iphone5.png */; };
 		85A690AF18AD85A900351FCC /* screenshot1_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A690AC18AD85A900351FCC /* screenshot1_iphone.png */; };
+		85D840D218B6CEC3003812FB /* BT_TERMINAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D840D118B6CEC3003812FB /* BT_TERMINAR.png */; };
 		85DEB3CA1850C1C6002D6A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3C91850C1C6002D6A98 /* Foundation.framework */; };
 		85DEB3CC1850C1C6002D6A98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CB1850C1C6002D6A98 /* CoreGraphics.framework */; };
 		85DEB3CE1850C1C6002D6A98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CD1850C1C6002D6A98 /* UIKit.framework */; };
@@ -41,7 +42,7 @@
 		85DEB3EE1850C1C6002D6A98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DEB3CD1850C1C6002D6A98 /* UIKit.framework */; };
 		85DEB3F61850C1C6002D6A98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85DEB3F41850C1C6002D6A98 /* InfoPlist.strings */; };
 		85DEB3F81850C1C6002D6A98 /* LocerylAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DEB3F71850C1C6002D6A98 /* LocerylAlarmTests.m */; };
-		85E97766189AFE2400B0886D /* BT_TERMINAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 85E97765189AFE2400B0886D /* BT_TERMINAR.png */; };
+		85E97766189AFE2400B0886D /* BT_TERMINAR_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 85E97765189AFE2400B0886D /* BT_TERMINAR_old.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		85A690AA18AD85A900351FCC /* screenshot1_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1_ipad.png; sourceTree = "<group>"; };
 		85A690AB18AD85A900351FCC /* screenshot1_iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1_iphone5.png; sourceTree = "<group>"; };
 		85A690AC18AD85A900351FCC /* screenshot1_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1_iphone.png; sourceTree = "<group>"; };
+		85D840D118B6CEC3003812FB /* BT_TERMINAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BT_TERMINAR.png; sourceTree = "<group>"; };
 		85DEB3C61850C1C6002D6A98 /* LocerylAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocerylAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DEB3C91850C1C6002D6A98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85DEB3CB1850C1C6002D6A98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,7 +97,7 @@
 		85DEB3F31850C1C6002D6A98 /* LocerylAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocerylAlarmTests-Info.plist"; sourceTree = "<group>"; };
 		85DEB3F51850C1C6002D6A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85DEB3F71850C1C6002D6A98 /* LocerylAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocerylAlarmTests.m; sourceTree = "<group>"; };
-		85E97765189AFE2400B0886D /* BT_TERMINAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BT_TERMINAR.png; sourceTree = "<group>"; };
+		85E97765189AFE2400B0886D /* BT_TERMINAR_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BT_TERMINAR_old.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,8 @@
 				850406CF18971DF900DD15AF /* tela_1.png */,
 				8548DF66189EE06B0054FB92 /* tela_1 ajustada.png */,
 				850406D018971DF900DD15AF /* tela_2.png */,
-				85E97765189AFE2400B0886D /* BT_TERMINAR.png */,
+				85D840D118B6CEC3003812FB /* BT_TERMINAR.png */,
+				85E97765189AFE2400B0886D /* BT_TERMINAR_old.png */,
 				850406D118971DF900DD15AF /* tela_3.png */,
 				850406C918971DF100DD15AF /* bt_comofunciona.png */,
 				850406CA18971DF100DD15AF /* bt_fechar.png */,
@@ -340,11 +343,12 @@
 				85A690AD18AD85A900351FCC /* screenshot1_ipad.png in Resources */,
 				8548DF61189EDA060054FB92 /* 40.png in Resources */,
 				850406CC18971DF100DD15AF /* bt_comofunciona.png in Resources */,
-				85E97766189AFE2400B0886D /* BT_TERMINAR.png in Resources */,
+				85E97766189AFE2400B0886D /* BT_TERMINAR_old.png in Resources */,
 				850406D318971DF900DD15AF /* tela_2.png in Resources */,
 				8548DF60189EDA060054FB92 /* 58.png in Resources */,
 				850406D418971DF900DD15AF /* tela_3.png in Resources */,
 				850406CE18971DF100DD15AF /* bt_ok.png in Resources */,
+				85D840D218B6CEC3003812FB /* BT_TERMINAR.png in Resources */,
 				8548DF64189EDA060054FB92 /* 76.png in Resources */,
 				850406CD18971DF100DD15AF /* bt_fechar.png in Resources */,
 				85A690AF18AD85A900351FCC /* screenshot1_iphone.png in Resources */,
