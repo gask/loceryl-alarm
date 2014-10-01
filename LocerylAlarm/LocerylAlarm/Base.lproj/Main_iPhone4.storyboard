@@ -9,15 +9,15 @@
             <objects>
                 <viewController storyboardIdentifier="FollowUpView" id="sdN-os-7Uk" userLabel="AfterAlarmController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fzm-fz-UoD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela_3.png" id="aqJ-WU-1JA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                                <rect key="frame" x="0.0" y="30" width="320" height="507"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tai-ZG-WPV">
-                                <rect key="frame" x="110" y="260" width="100" height="42"/>
+                                <rect key="frame" x="110" y="305" width="100" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Voltar" image="bt_fechar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,7 +30,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MX6-84-pue"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0A-32-5LQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +41,7 @@
             <objects>
                 <viewController storyboardIdentifier="AlarmView" id="62T-0H-RFZ" customClass="AlarmViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="bUV-Nc-KTg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="m2d-y0-KA8">
@@ -50,11 +50,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela_2.png" id="vi6-Eo-HMO">
-                                <rect key="frame" x="-17" y="0.0" width="320" height="478"/>
+                                <rect key="frame" x="-17" y="38" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U8B-yz-06m">
-                                <rect key="frame" x="111" y="226" width="99" height="74"/>
+                                <rect key="frame" x="111" y="264" width="99" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OK" image="bt_ok.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" id="Gjm-O9-bhi">
-                                <rect key="frame" x="0.0" y="276" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="314" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="62T-0H-RFZ" id="VWl-Dq-aBc"/>
@@ -75,7 +75,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="snoozePicker" destination="Gjm-O9-bhi" id="ept-gp-tOi"/>
                     </connections>
@@ -89,7 +89,7 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" userLabel="SetAlarmController" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="xUQ-8E-uHg">
@@ -97,20 +97,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cutiphoneregular.png" id="t53-8o-kId">
-                                <rect key="frame" x="30" y="25" width="272" height="296"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locerylTitle.png" id="qMH-u2-HOo">
-                                <rect key="frame" x="61" y="328" width="175" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greyBand.png" id="X2i-At-Xm4">
-                                <rect key="frame" x="0.0" y="402" width="319" height="16"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela_1 ajustada.png" id="vIk-wY-at6">
+                                <rect key="frame" x="0.0" y="27" width="320" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ec2-YE-tiU">
-                                <rect key="frame" x="241" y="277" width="46" height="35"/>
+                                <rect key="frame" x="241" y="304" width="46" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ativar alarme" image="bt_ok.png"/>
                                 <connections>
@@ -118,7 +110,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C41-OO-Nhh">
-                                <rect key="frame" x="0.0" y="403" width="319" height="13"/>
+                                <rect key="frame" x="0.0" y="466" width="319" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="O tratamento foi concluído." image="BT_TERMINAR.png">
@@ -129,7 +121,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nLy-uu-Cob">
-                                <rect key="frame" x="192" y="205" width="121" height="54"/>
+                                <rect key="frame" x="192" y="230" width="121" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Como funciona?" image="bt_comofunciona.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,14 +131,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe a data da última aplicação de Loceryl esmalte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9bC-LT-iQT">
-                                <rect key="frame" x="41" y="257" width="268" height="21"/>
+                                <rect key="frame" x="41" y="284" width="268" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.15367218902381671" green="0.4867165122836557" blue="0.78910495923913038" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data" textAlignment="center" minimumFontSize="17" id="gxk-E3-v2B">
-                                <rect key="frame" x="47" y="282" width="186" height="30"/>
+                                <rect key="frame" x="47" y="309" width="186" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -157,15 +149,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Alarme" image="new_clock copy.png" id="CC0-d3-272"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="activateAlarmButton" destination="ec2-YE-tiU" id="ZtQ-xo-lLB"/>
                         <outlet property="dateInput" destination="2ko-ql-0rG" id="Pif-dG-LpP"/>
                         <outlet property="dayField" destination="gxk-E3-v2B" id="y7x-eJ-2YW"/>
                         <outlet property="description" destination="9bC-LT-iQT" id="6FO-9e-owH"/>
-                        <outlet property="dismissButton" destination="tNZ-M5-ibS" id="I4q-t5-93A"/>
+                        <outlet property="dismissButton" destination="8sh-Ge-sZE" id="JeS-JW-6dY"/>
                         <outlet property="finishTreatmentBtn" destination="C41-OO-Nhh" id="iW6-V7-rJL"/>
-                        <outlet property="pickerToolbar" destination="5HZ-Gb-bNL" id="bNc-XM-pky"/>
+                        <outlet property="pickerToolbar" destination="U6W-9b-cHo" id="aE5-uR-DI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -197,22 +189,22 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                     </timeZone>
                 </datePicker>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5HZ-Gb-bNL">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="U6W-9b-cHo">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.076677662260000001" green="0.23298112200000001" blue="0.44832190690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.07667766226392625" green="0.23298112203949198" blue="0.44832190688775508" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
-                        <barButtonItem width="288" style="plain" id="dsk-Ew-OWh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tNZ-M5-ibS">
+                        <barButtonItem width="288" style="plain" id="Pyh-Gc-OpV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8sh-Ge-sZE">
                                 <rect key="frame" x="16" y="0.0" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.076677662260000001" green="0.23298112200000001" blue="0.44832190690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Data escolhida">
-                                    <color key="titleColor" red="1" green="0.97481841170000005" blue="0.99476517679999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.97481841170102468" blue="0.99476517677347198" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cH8-WA-iop"/>
+                                    <action selector="doneAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tKT-Qb-bQ0"/>
                                 </connections>
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -227,15 +219,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="EdK-my-tTL" userLabel="First" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X7E-aW-4Y5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horglow.png" id="UNV-4a-rKe">
-                                <rect key="frame" x="80" y="0.0" width="240" height="480"/>
+                                <rect key="frame" x="80" y="0.0" width="240" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wmq-LS-V57">
-                                <rect key="frame" x="22" y="205" width="277" height="86"/>
+                                <rect key="frame" x="22" y="258" width="277" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BT_INICIAR_PNG.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,21 +237,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locerylTitle.png" id="W91-yb-DBQ">
-                                <rect key="frame" x="40" y="78" width="240" height="88"/>
+                                <rect key="frame" x="40" y="99" width="240" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="especs.png" id="RUR-R6-Vpn">
-                                <rect key="frame" x="22" y="404" width="278" height="66"/>
+                                <rect key="frame" x="22" y="488" width="278" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galderma.png" id="Kdk-nn-k8V">
-                                <rect key="frame" x="257" y="462" width="57" height="15"/>
+                                <rect key="frame" x="257" y="546" width="57" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gY-yI-hYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,57 +262,57 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="x6d-l5-qvE" customClass="ThreeBtnController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eI3-jD-hKF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0up-7B-rqN" userLabel="QuizButton">
-                                <rect key="frame" x="0.0" y="20" width="320" height="148"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="horglow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="QuizControllerSegue" customClass="SegueToTabBar" id="z2u-0l-Bax"/>
+                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="QuizControllerSegue" customClass="SegueToTabBar" id="omS-zX-GyY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xMo-38-YQ9" userLabel="AlarmButton">
-                                <rect key="frame" x="0.0" y="166" width="320" height="148"/>
+                                <rect key="frame" x="0.0" y="207" width="320" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="vertglow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="AlarmControllerSegue" customClass="SegueToTabBar" id="kq5-Lm-gy1"/>
+                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="AlarmControllerSegue" customClass="SegueToTabBar" id="Lhx-0H-xBa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sI0-nn-xpg" userLabel="CameraButton">
-                                <rect key="frame" x="0.0" y="312" width="320" height="148"/>
+                                <rect key="frame" x="0.0" y="369" width="320" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="vertglow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="CameraControllerSegue" customClass="SegueToTabBar" id="owq-0B-Gl1"/>
+                                    <segue destination="TKa-4R-JHD" kind="custom" identifier="CameraControllerSegue" customClass="SegueToTabBar" id="aXN-Q6-sXb"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BT_INICIAL_ALARME.png" id="GiM-F6-pA0">
-                                <rect key="frame" x="68" y="170" width="184" height="138"/>
+                                <rect key="frame" x="68" y="210" width="184" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BT_INICIAR_FOTO.png" id="5wr-QD-fnn">
-                                <rect key="frame" x="109" y="359" width="90" height="89"/>
+                                <rect key="frame" x="109" y="414" width="90" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BT_INICIAL_TESTE.png" id="7Cv-sz-s6v">
-                                <rect key="frame" x="0.0" y="42" width="309" height="128"/>
+                                <rect key="frame" x="0.0" y="73" width="309" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galderma.png" id="CAr-tK-VwH">
-                                <rect key="frame" x="257" y="462" width="57" height="15"/>
+                                <rect key="frame" x="257" y="548" width="57" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gg-yP-aev">
-                                <rect key="frame" x="10" y="16" width="310" height="47"/>
+                                <rect key="frame" x="10" y="45" width="307" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">VOCÊ SABE O QUE REALMENTE 
 AJUDA A TER UNHAS SAUDÁVEIS?</string>
@@ -329,7 +321,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOTOGRAFE E ACOMPANHE O TRATAMENTO" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rlB-75-euU">
-                                <rect key="frame" x="2" y="312" width="318" height="47"/>
+                                <rect key="frame" x="2" y="367" width="318" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -338,7 +330,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHF-ix-uiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,7 +341,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
             <objects>
                 <tabBarController definesPresentationContext="YES" id="TKa-4R-JHD" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="nqo-wo-kjK">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -370,15 +362,15 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
             <objects>
                 <viewController id="0Pa-UO-zTL" customClass="CameraController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8WP-ff-RaF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="progressBack.png" id="tpw-9x-u9B">
-                                <rect key="frame" x="13" y="22" width="294" height="268"/>
+                                <rect key="frame" x="13" y="70" width="294" height="279"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JK9-b5-4XJ">
-                                <rect key="frame" x="40" y="309" width="92" height="111"/>
+                                <rect key="frame" x="40" y="392" width="92" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BT_FOTOGRAFE_PNGnew copy.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -388,7 +380,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mvT-KV-Rnh">
-                                <rect key="frame" x="188" y="309" width="92" height="111"/>
+                                <rect key="frame" x="188" y="392" width="92" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BT_ACOMPANHE_PNGnew.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -398,7 +390,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BT_INICIAR_FOTO.png" id="SlT-GO-y1B">
-                                <rect key="frame" x="101" y="105" width="120" height="115"/>
+                                <rect key="frame" x="101" y="154" width="120" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -408,7 +400,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                     <navigationItem key="navigationItem" id="fZf-t4-tMt"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UX9-gW-Bxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,22 +411,22 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
             <objects>
                 <viewController id="vrr-9B-LpQ" customClass="ViewPhotoController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gw-AH-3i6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1c6-ee-JCb">
-                                <rect key="frame" x="0.0" y="20" width="320" height="429"/>
+                                <rect key="frame" x="0.0" y="52" width="320" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acompanhe a evolução do tratamento." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uUt-o8-uWN">
-                                <rect key="frame" x="0.0" y="29" width="320" height="16"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vae-Qg-Ib4">
-                                <rect key="frame" x="252" y="393" width="48" height="48"/>
+                                <rect key="frame" x="252" y="484" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BT_NEXT_FOTO_PNG.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -444,7 +436,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rDC-BY-AE9">
-                                <rect key="frame" x="20" y="47" width="46" height="30"/>
+                                <rect key="frame" x="20" y="16" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Voltar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -454,7 +446,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Umd-wE-7Ej">
-                                <rect key="frame" x="20" y="393" width="48" height="48"/>
+                                <rect key="frame" x="20" y="484" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BR_PREV_FOTO_PNG.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -464,7 +456,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dtf-m3-KAD">
-                                <rect key="frame" x="73" y="404" width="174" height="25"/>
+                                <rect key="frame" x="73" y="495" width="174" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -472,7 +464,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nx3-7U-s2I">
-                                <rect key="frame" x="253" y="47" width="47" height="30"/>
+                                <rect key="frame" x="253" y="16" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Excluir">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -482,11 +474,11 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galderma.png" id="Vf7-AO-K0z">
-                                <rect key="frame" x="257" y="462" width="57" height="15"/>
+                                <rect key="frame" x="257" y="547" width="57" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greyBand.png" id="eEp-e7-SeM">
-                                <rect key="frame" x="0.0" y="449" width="320" height="11"/>
+                                <rect key="frame" x="0.0" y="534" width="320" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -499,7 +491,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                     <navigationItem key="navigationItem" id="Qza-5t-QkO"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="deleteButton" destination="Nx3-7U-s2I" id="N47-Dy-QHx"/>
                         <outlet property="imageView" destination="1c6-ee-JCb" id="KkL-m4-3eK"/>
@@ -521,15 +513,15 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
             <objects>
                 <viewController id="Smv-oZ-3vM" userLabel="Quiz" customClass="QuizController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="agF-PF-UZj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizBack.png" id="e2o-zF-ZfK" userLabel="Background">
-                                <rect key="frame" x="20" y="33" width="281" height="141"/>
+                                <rect key="frame" x="20" y="58" width="281" height="141"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e4I-Qk-WFl" userLabel="truthButton">
-                                <rect key="frame" x="171" y="291" width="49" height="49"/>
+                                <rect key="frame" x="171" y="352" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="grayRight.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -539,7 +531,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qcM-Q1-yPk" userLabel="lieButton">
-                                <rect key="frame" x="95" y="291" width="49" height="49"/>
+                                <rect key="frame" x="95" y="352" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="grayWrong.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -549,15 +541,15 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redWrong.png" id="KOA-UK-E5U" userLabel="lieConfirmation">
-                                <rect key="frame" x="95" y="291" width="49" height="49"/>
+                                <rect key="frame" x="95" y="352" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenRight.png" id="EzC-Bz-bZg" userLabel="truthConfirmation">
-                                <rect key="frame" x="171" y="291" width="49" height="49"/>
+                                <rect key="frame" x="171" y="352" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XVQ-ga-DKd">
-                                <rect key="frame" x="187" y="399" width="78" height="29"/>
+                                <rect key="frame" x="187" y="484" width="78" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Próxima" image="proxima.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -567,7 +559,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nAV-ii-7ND">
-                                <rect key="frame" x="50" y="399" width="78" height="29"/>
+                                <rect key="frame" x="50" y="484" width="78" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Última" image="ultima.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -577,32 +569,32 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon.png" id="KjM-Em-zob" userLabel="Balloon">
-                                <rect key="frame" x="39" y="182" width="240" height="128"/>
+                                <rect key="frame" x="39" y="224" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acidez do limão mata o fungo causador da micose da unha?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" id="XVp-hV-kbk" userLabel="Question">
-                                <rect key="frame" x="44" y="197" width="227" height="82"/>
+                                <rect key="frame" x="44" y="239" width="227" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mito! Deixe para usar limão na cozinha." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tWB-g6-CaW" userLabel="Tip">
-                                <rect key="frame" x="9" y="337" width="302" height="60"/>
+                                <rect key="frame" x="9" y="406" width="302" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você sabe o que realmente ajuda a ter as unhas mais saudáveis?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Flo-Ge-gFO">
-                                <rect key="frame" x="8" y="7" width="292" height="47"/>
+                                <rect key="frame" x="8" y="17" width="292" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
                                 <color key="textColor" red="0.10776995668316831" green="0.451171875" blue="0.6209970606435643" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos testar seus conhecimentos!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vrK-67-2iP">
-                                <rect key="frame" x="8" y="158" width="292" height="47"/>
+                                <rect key="frame" x="8" y="197" width="292" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
                                 <color key="textColor" red="0.1077699567" green="0.451171875" blue="0.62099706060000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -613,7 +605,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quiz" image="new_question copy.png" id="wPq-Gh-Egc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="lastButton" destination="nAV-ii-7ND" id="Z61-Z7-gOp"/>
                         <outlet property="lieButton" destination="qcM-Q1-yPk" id="Irr-95-q3k"/>
@@ -633,9 +625,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
         <scene sceneID="M5f-0Q-OiO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="n7R-jH-lTR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Progresso" image="new_camera copy.png" id="0bb-16-PQC">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Progresso" image="new_camera copy.png" id="0bb-16-PQC"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0yd-87-x7t">
@@ -666,7 +656,6 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
         <image name="bt_comofunciona.png" width="383" height="168"/>
         <image name="bt_fechar.png" width="493" height="213"/>
         <image name="bt_ok.png" width="502" height="383"/>
-        <image name="cutiphoneregular.png" width="1389" height="1489"/>
         <image name="especs.png" width="1275" height="275"/>
         <image name="galderma.png" width="305" height="83"/>
         <image name="grayRight.png" width="234" height="234"/>
@@ -682,6 +671,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
         <image name="proxima.png" width="442" height="191"/>
         <image name="quizBack.png" width="1310" height="625"/>
         <image name="redWrong.png" width="234" height="234"/>
+        <image name="tela_1 ajustada.png" width="1579" height="2587"/>
         <image name="tela_2.png" width="1579" height="2491"/>
         <image name="tela_3.png" width="1349" height="2361"/>
         <image name="ultima.png" width="442" height="191"/>
@@ -693,7 +683,7 @@ AJUDA A TER UNHAS SAUDÁVEIS?</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="owq-0B-Gl1"/>
-        <segue reference="1yB-IV-TEz"/>
+        <segue reference="2Ha-sx-S3O"/>
+        <segue reference="aXN-Q6-sXb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -66,11 +66,20 @@
 
 -(void)moveToolbarToFront
 {
-    CGRect toolbarTargetFrame = CGRectMake(0, 173, 320, 44);
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+    
+    CGRect toolbarTargetFrame = CGRectMake(0, 220, 320, 44);//269 // 173
     
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {
-        toolbarTargetFrame = CGRectMake(0, 250, 768, 44);
+        toolbarTargetFrame = CGRectMake(0, 550, 768, 44);
+    }
+    else if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        if (iOSDeviceScreenSize.height == 568)
+        {
+            toolbarTargetFrame = CGRectMake(0, 294, 320, 44);
+        }
     }
     
     [UIView beginAnimations:@"MoveIn" context:nil];
@@ -92,7 +101,7 @@
     
     NSString *dateTimeString = [dateFormatter stringFromDate: dateInput.date];
     
-    NSLog(@"mudei data no textfield, date: %@",dateTimeString);
+    //NSLog(@"mudei data no textfield, date: %@",dateTimeString);
     
     dayField.text = dateTimeString;
 }
@@ -101,7 +110,7 @@
 {
     [super viewDidLoad];
         
-    NSLog(@"loadei a view princiapal...");
+    //NSLog(@"loadei a view princiapal...");
     
     //NSDate *now = [NSDate date];
     
@@ -241,7 +250,7 @@
         
         NSString *dateTimeString = [dateFormatter stringFromDate: alarmDate];
         
-        NSLog(@"set tapped, date: %@",dateTimeString);
+        //NSLog(@"set tapped, date: %@",dateTimeString);
         
 //        NSDate *teste = [NSDate dateWithTimeIntervalSinceNow:10];
     
@@ -256,7 +265,7 @@
 }
 
 - (IBAction)alarmCancelButtonTapped:(id)sender {
-    NSLog(@"cancel tapped");
+    //NSLog(@"cancel tapped");
     
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     

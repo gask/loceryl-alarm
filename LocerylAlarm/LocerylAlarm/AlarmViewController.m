@@ -68,15 +68,15 @@
     else if(selectedDelayIndex == 3) secondsSelected = 4*60*60;
     else if(selectedDelayIndex == 0)
     {
-        NSLog(@"hehe, nada de adiar...");
+        //NSLog(@"hehe, nada de adiar...");
         secondsSelected = 7*24*60*60;
     }
     else
     {
-        NSLog(@"deu erro");
+        //NSLog(@"deu erro");
     }
     
-    NSLog(@"selecionou %li horas.", secondsSelected/60/60);
+    //NSLog(@"selecionou %li horas.", secondsSelected/60/60);
     
     NSDate *oldAlarmDate = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey: @"alarmDate"];
     
@@ -160,7 +160,7 @@
     
     NSString *dateTimeString = [dateFormatter stringFromDate: fireDate];
     
-    NSLog(@"set tapped, date: %@",dateTimeString);
+    //NSLog(@"set tapped, date: %@",dateTimeString);
     
     [[NSUserDefaults standardUserDefaults] setObject:fireDate forKey:@"alarmDate"];
     
